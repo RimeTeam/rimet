@@ -1,0 +1,354 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* ScratchOS Water theme for Rimet by APH6000, FasdusWisdom AKA Ethan F. */
+/* If applying outside of Control Panel, set theme to Rimet Default. */
+
+ /*Rimet Control Panel Fix*/
+ .tabbed > section > div {
+    background: #EEE !important;
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+}
+
+.tabbed > section > h1 > label {
+    background: #EEE !important;
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+ 
+
+ #themePreview > #window0 > .windowHeader {
+  width: 220px;
+  top: 26px;
+  position: relative;
+  z-index: 40000;
+}
+
+#themePreview > #window0 > .windowHeader > strong {
+  left: 5px;
+  top: 1px;
+  text-align: left;
+}
+
+/*Japanese fix*/
+  .windowHeader > strong::after {
+  font-size: 21px !important;
+    top: 6px !important;
+  }
+  
+  
+/*Rimet ND Fix */
+  
+  .windowHeader > span:active {
+  box-shadow: none !important;
+}
+
+  
+
+
+#window0 > .wincontent {
+  padding: 0px !important;
+}
+
+.windowHeader > strong {
+ padding-left: 0px !important; 
+ background: none !important;
+}
+
+#window0 > .windowHeader > strong {
+    left: 10px !important;
+}
+
+
+.window, #txt {
+  box-shadow: none !important;
+}
+
+#icons {
+  font-family: Open Sans !important;
+}
+
+  .theme-credit::after { 
+  content: "ScratchOS Water Theme by APH6000" !important;
+}
+
+.windowHeader > span {
+ top: 0px !important;  
+}
+
+.windowHeader {
+    background: linear-gradient(0deg, rgba(231,233,233,1) 0%, rgba(255,255,255,1) 100%) !important;
+    color: #000;
+    margin: 0px !important;
+    box-shadow: none !important;
+    text-align: right;
+    border-bottom: 2px solid rgb(208, 209, 210);
+    border-radius: 5px 5px 0px 0px !important;
+    padding: 2px;
+    cursor: move;
+    height: 28px;
+    font-family: "Microsoft Sans Serif", Tahoma, Arial;
+}
+
+#chiclose, .winclose > img {
+  display: none;
+}
+
+.winclose:hover, .winmaximize:hover, .winminimize:hover {
+ opacity: 0.7; 
+}
+
+#comments {
+  display: none !important;
+}
+
+
+#rimetbtn {  display: none;  }
+
+.dropbtn {
+    background-image: url('sow/Buttons.png') !important;
+    background-size: 100% !important;
+    top: -6px !important;
+    left: 4px !important;
+    position: relative !important;
+    width: 54px !important;
+    height: 22px !important;
+}
+
+  .dropbtn2, .dropbtn3 {
+  display: none !important;
+}
+
+.taskbarPanel.activeTab {
+    border: 2px solid #868686;
+    background: #aaa;
+    font-weight: bold;
+        height: 22px; 
+    box-shadow: none !important;
+}
+
+.taskbarPanel {
+    border: 2px solid hsl(0, 0%, 62%);
+    background: hsl(0, 0%, 95%);
+        height: 22px; 
+        left: 60px !important;
+    font-weight: bold;
+    box-shadow: none !important;
+}
+
+.winclose {
+    background: url("sow/stop-Default2.png") !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    box-shadow: none;
+            left: 0px;
+    border-radius: 0px !important;
+    color: #000;
+    float: right !important;
+    font-weight: bold;
+}
+
+.winmaximize {
+    background: url("sow/referee-Default.png") !important;
+    background-size: 91% !important;
+    background-repeat: no-repeat !important;
+    box-shadow: none;
+            left: -2px;
+    border-radius: 0px !important;
+    color: #000;
+}
+
+.winminimize {
+    background: url("sow/flag-Default.png") !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    box-shadow: none;
+        left: -7px;
+    border-radius: 0px !important;
+    color: #000;
+}
+
+.winmaximize > span {
+    border: none;
+}
+
+.windowHeader > strong {
+    position: absolute;
+        font-family: Open Sans;
+    top: 2px;
+    left: 5px;
+    line-height: 29px;
+    font-size: 21px;
+}
+
+.taskbarPanel, #txt, .wincontent {
+    font-family: Open Sans !important;
+}
+
+.taskbarPanel {
+top: -3px !important;
+}
+
+.contents, .themeSelect-content {
+    color: black;
+    border: 2px solid hsl(0, 0%, 82%);
+    background: hsl(0, 0%, 95%) !important;
+    box-shadow: none !important;
+}
+
+.contents {
+      position: absolute;
+      width: 180px !important;
+    bottom: 27px !important;
+    left: 3px !important;
+}
+
+.button, .audioplayer-bar-played::after {
+    background: hsl(0, 0%, 95%) !important;
+    border: 2px solid hsl(0, 0%, 82%) !important;
+    box-shadow: none !important;
+    font-family: Open Sans !important;
+    padding: 10px;
+    display: inline-block;
+}
+
+.audioplayer-playpause {
+      background: hsl(0, 0%, 95%) !important;
+    border: 2px solid hsl(0, 0%, 82%) !important;
+    box-shadow: none !important;
+    font-family: Open Sans !important;
+}
+
+.button:hover, .audioplayer-playpause:hover {
+    background: hsl(0, 0%, 95%) !important;
+    border: 2px solid hsl(0, 0%, 82%) !important;
+    box-shadow: none !important;
+    font-family: Open Sans !important;
+}
+
+.winminimize > span {
+    border: none;
+}
+
+.windowHeader > span {
+    display: inline-block;
+    cursor: pointer;
+    border: 0px solid #000;
+    margin-left: 0px;
+    font-size: 19px;
+    padding: 2px 10px;
+    font-family: Open Sans;
+    border-radius: 5px;
+    line-height: 20px;
+    width: 7px;
+    height: 23px;
+    position: relative;
+    overflow: hidden;
+}
+
+#taskbar {
+    position: absolute;
+    height: 28px;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(159,159,159,1) 0%, rgba(244,249,250,1) 100%);
+    box-shadow: none;
+    border-radius: 0px;
+    color: #000;
+}
+
+.abt-rmt, h1, h2, h3, p, a, #txt {
+font-family: Open Sans !important;
+}
+
+
+#box, #cpl, .abt-rmt, #window0 > .wincontent, #window6 > .wincontent {
+    background: white !important;
+        border: 2px solid #ccc;
+    box-shadow: none !important;
+    font-family: Times New Roman;
+}
+
+.window {
+    position: absolute;
+    border: 2px solid rgb(208, 209, 210);
+    background: #ebebeb;
+    border-radius: 5px 5px 0px 0px !important;
+    z-index: 1000;
+}
+
+.line-separator {
+    box-shadow: none !important;
+    background: hsl(0, 0%, 82%);
+}
+
+.wincontent {
+    padding: 10px;
+    min-width: 220px;
+    min-height: 140px;
+    border: 0px solid #000;
+    margin: 2px;
+    /* border-radius: 0 0 5px 5px; */
+}
+
+desktop, #themePreview {
+    background-image: url('sow/Rays_Widescreen.png');
+    background-size: cover;
+}
+
+[role=tabpanel] {
+        border: 1px solid hsl(0, 0%, 82%);
+    background: hsl(0, 0%, 99%);
+        border-radius: 0px;
+            box-shadow: none !important;
+}
+
+menu[role=tablist] button {
+               border: 1px solid hsl(0, 0%, 82%);
+    border-bottom: none;
+            box-shadow: none !important;
+    background: hsl(0, 0%, 95%); 
+        border-radius: 0px;
+}
+
+menu[role=tablist] button[aria-selected=true] {
+           border: 1px solid hsl(0, 0%, 82%);
+    border-bottom: none;
+        border-radius: 0px;
+            box-shadow: none !important;
+    background: hsl(0, 0%, 99%); 
+}
+menu[role=tablist] button:first-of-type:before {
+display: none;
+}
+
+.rimetPossible, .sysinfo-title, .themeSelect-content > strong, .wplist > strong {
+font-family: Open Sans, "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial !important;
+}
+
+.menu {
+    background: #EEE !important;
+    box-shadow: none !important;
+    border: 3px solid #ccc !important;
+}
+
+.menu-option {
+    color: #1b1b1b;
+}
+
+.menu-option:hover {
+    background: #005fe6; 
+    color: #fff;
+}
+
+.wplist, wplist {
+  border: 2px solid #eee !important;    
+  background: #fff !important;
+      box-shadow: none !important;
+}
+
+.line-separator, hr {
+    box-shadow: inset 0px 3px #eee;
+}

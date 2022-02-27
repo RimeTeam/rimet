@@ -1,0 +1,1647 @@
+<!--Rimet that's maintained!-->
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="frameworks/98.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="jquery.min.js"></script>
+<script src="jquery.Dragging.js"></script>
+	<script src="script.js"></script>	
+		<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" type="text/css" href="audioplayer.css">
+	<!-- JQuery locally for more compatibility -->
+		<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-1.12.4.js"></script>
+	<script src="jquery-ui.js"></script>
+
+
+<div id="RimetOverlay"><!--Rimet is loading, this will only take a moment...<span class="blinking-cursor">_</span>-->
+<script>
+ function timeFunction() {
+            setTimeout(function(){ document.getElementById('RimetOverlay').style.cssText = 'display: none !important; z-index: 0 !important;'; }, 14500);
+        }
+
+
+
+function moveDiv() {
+    var $span = $("#random");
+    
+    $span.fadeOut(0, function() {
+        var maxLeft = $(window).width() - $span.width();
+        var maxTop = $(window).height() - $span.height();
+        var leftPos = Math.floor(Math.random() * (maxLeft + 1))
+        var topPos = Math.floor(Math.random() * (maxTop + 1))
+     
+        $span.css({ left: leftPos, top: topPos }).fadeIn(0);
+    });
+};
+
+
+moveDiv();
+setInterval(moveDiv, 500);
+</script>
+<div id="wrap" onLoad="progress();">
+<br><br><br>
+<!--<img src="rimet-startup.png" style="width:70%;">-->
+<br>
+<a id="skip" onclick="document.getElementById('RimetOverlay').style.display = 'none';">Skip</a>
+<div id="container">
+    <span id="random"><img src="flyingrimet.gif"></span>
+</div>
+</div>
+
+</div>
+		<!-- Themes -->
+		<div class="allThemes">
+<link rel="stylesheet" type="text/css" title="Rimet Default" class="themesheet" href="default.css"> 
+<link rel="alternate stylesheet 1" type="text/css" title="theme1" class="themesheet" href="classic.css"> 
+<link rel="alternate stylesheet 2" type="text/css" title="theme2" class="themesheet" href="marble.css"> 
+<link rel="alternate stylesheet 3" type="text/css" title="theme3" class="themesheet" href="cy.css"> 
+<link rel="alternate stylesheet 4" type="text/css" title="theme4" class="themesheet" href="sow.css"> 
+<link rel="alternate stylesheet 5" type="text/css" title="theme5" class="themesheet" href="win10.css"> 
+<link rel="alternate stylesheet 6" type="text/css" title="theme6" class="themesheet" href="underwater.css"> 
+<link rel="alternate stylesheet 7" type="text/css" title="theme7" class="themesheet" href="window.css"> 
+<link rel="alternate stylesheet 8" type="text/css" title="theme8" class="themesheet" href="vapor.css">
+<link rel="alternate stylesheet 9" type="text/css" title="theme9" class="themesheet" href="ecfweb.css">
+<link rel="alternate stylesheet 10" type="text/css" title="theme10" class="themesheet" href="mos1.css">
+<link rel="alternate stylesheet 11" type="text/css" title="theme11" class="themesheet" href="parappa.css">
+<link rel="alternate stylesheet 11" type="text/css" title="theme12" class="themesheet" href="lunablue.css">
+<link rel="alternate stylesheet 12" type="text/css" title="theme13" class="themesheet" href="winclassic.css">
+<link rel="alternate stylesheet 13" type="text/css" title="theme14" class="themesheet" href="w2k.css">
+<link rel="alternate stylesheet 14" type="text/css" title="theme15" class="themesheet" href="win31.css">
+<link rel="alternate stylesheet 15" type="text/css" title="theme16" class="themesheet" href="syscolor.css">
+<link rel="alternate stylesheet 16" type="text/css" title="theme17" class="themesheet" href="win93.css">
+</div>
+<!-- Languagesheet -->
+    <link id="theme" rel="stylesheet" type="text/css" href="default.css" />
+  
+    <script>
+        function toggleTheme(value) {
+  
+            // Obtain the name of stylesheet 
+            // as a parameter and set it 
+            // using href attribute.
+            var sheets = document
+                .getElementsByTagName('link');
+  
+            sheets[0].href = value;
+        }
+    </script>
+
+	<title>Rimet Desktop</title>
+	<link rel="alternate stylesheet 65536" type="text/css" title="theme65536" href="lmc.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<body id="RimetOuter" onload="timeFunction();set_style_from_cookie();placeholder();startTime();userAgent()"> 
+	<desktop id="RimetDesktop">
+	<style>
+body {
+  font-family: Microsoft Sans Serif;
+}
+
+.menu {
+  width: 117px;
+  z-index: 9999999999;
+  position: fixed;
+  display: none;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+}
+
+
+  .menu-options {
+    list-style: none;
+    z-index: 1;
+    padding: 0px 0px;
+    padding-left: 20px;
+  }
+  
+    .menu-option {
+      font-weight: 500;
+      z-index: 1;
+      font-size: 11px;
+      cursor: pointer;
+          margin: 6px;
+            font-family: Microsoft Sans Serif;
+            color: #000;
+}
+
+      &:hover {
+        background: navy;
+      }
+    }
+  }
+}
+
+
+
+button{
+  background: grey;
+  border: none;
+  
+  .next{
+    color:green;
+  }
+  
+  &[disabled="false"]:hover{
+    .next{
+      color: red;
+      animation: move 0.5s;
+      animation-iteration-count: 2;
+    }
+  }
+}
+
+@keyframes move{
+  from{
+    transform: translate(0%);
+  }
+  50%{
+    transform: translate(-40%);
+  }
+  to{
+    transform: transform(0%);
+  }
+}
+</style>
+
+
+<div class="menu">
+  <ul class="menu-options">
+   <a class="openWindow" data-id="6"><p class="menu-option">Properties</p></a>
+   <a onClick="window.location.reload();" class="openWindow"><p class="menu-option">Reload Rimet</p></a>
+  </ul>
+</div>
+
+
+<script>
+const menu = document.querySelector(".menu");
+const menuOption = document.querySelector(".menu-option");
+let menuVisible = false;
+
+const toggleMenu = command => {
+  menu.style.display = command === "show" ? "block" : "none";
+  menuVisible = !menuVisible;
+};
+
+const setPosition = ({ top, left }) => {
+  menu.style.left = `${left}px`;
+  menu.style.top = `${top}px`;
+  toggleMenu("show");
+};
+
+window.addEventListener("click", e => {
+  if (menuVisible) toggleMenu("hide");
+});
+
+menuOption.addEventListener("click", e => {
+  console.log("mouse-option", e.target.innerHTML);
+});
+
+window.addEventListener("contextmenu", e => {
+  e.preventDefault();
+  const origin = {
+    left: e.pageX,
+    top: e.pageY
+  };
+  setPosition(origin);
+  return false;
+});
+
+</script>
+<div class="OEMTxt" style="display:none;"></div>
+	<div class="window open activeWindow" id="about" data-title="About Rimet">
+			<style>
+
+.show {display: inline-block;}
+
+#box {
+    font-family: "MS Sans Serif", "Microsoft Sans Serif", "Microsoft Sans Serif", "Pixelated MS Sans Serif", Segoe UI, Roboto, Fazu Sans, Helvetica, Arial; 
+}
+.button {
+   background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+	  font-family: "MS Sans Serif", "Microsoft Sans Serif", "Microsoft Sans Serif", "Pixelated MS Sans Serif", Segoe UI, Roboto, Fazu Sans, Helvetica, Arial; 
+  padding: 10px;
+  display: inline-block;
+}
+
+
+.wincontent a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.wincontent a:hover, #cpl a:hover {
+ text-decoration: underline; 
+}
+
+
+.empty {
+ height: 1000px;
+}
+
+.theme-credit::after { 
+  content: "Rimet Default created by Fasdus, APH6000.";
+}
+
+
+</style>
+<div id="header" class="abt-hdr">
+<script>
+function userAgent() {
+  var x = "User agent: " + navigator.userAgent;
+  document.getElementById("uA").innerHTML = x;
+}
+
+</script>
+<img id="rimetBanner" src="rimetemblem.png" style="position:relative;top: 20px;left: 15px;"> 
+		<div class="about-window-text">
+		<div class="abtRimet" style="position: absolute;top: 0px;margin-left: 80px;">
+		<span><br class="abLineB1">
+			<span class="rimetOSName">Fasdus' Rimet</span>
+			<br class="abLineB2">
+			<span class="rimetOSVersion">January 2022 Release</span>
+			<br class="abLineB3">
+			<span class="rimetCopyInfo">Copyright © 2019-2022 FasdusWisdom, APH6000</span>
+			<br class="abLineB4">
+			<div id="2kaRBO" class="2kAboveRimetBasedon"><span class="rimetBasedOn">Based on 'Windows' Template from </span><a class="rBasedLink" target="blank" style="color: rgb(0,0,200) !important;" href="https://html5-templates.com">www.html5-templates.com</a></div>
+<br class="abLineB5">
+            <style>
+            #\32 kaRBO {
+                display: none;
+                }   
+            </style>
+			<br class="abLineB6" style="display:none;">
+			<span class="rimetLicensedTo">This product is licensed to:</span><br class="abLineB7"><br class="abLineB7.5" style="display:none;">
+			<span class="rimetPersonLT">Administrator</span><br class="abLineB8"><br class="abLineB8.5">
+			
+			<hr class="abtHr1" style="width: 240px;position: relative;left: -10px;height: 1px;box-shadow: none !important;background: #000;"><br class="hr1replacement" style="display: none;"><div id="9xbRBO" class="9xBelowRimetBasedon">
+            <span class="rimetBasedOn">Based on 'Windows' Template from </span><a class="rBasedLink" target="blank" style="color: rgb(0,0,200) !important;" href="https://html5-templates.com">www.html5-templates.com</a></div>
+
+<span class="rimetOldRAMavail" style="display:none;">Physical memory available to Rimet: 512,000 KB</span>
+<hr class="abtHr2" style="width: 240px;position: relative;left: -10px;height: 1px;box-shadow: none !important;background: #000;"><br class="hr2replacement" style="display: none;">
+            <div id="9xbRBO" class="9xBelowAboutStuff">
+<span class="rimetModeType">Enhanced Mode</span><br class="modeL1">
+<span class="rimetRAMavail">Physical Memory:    512,000 KB Free</span><br class="modeL2">
+                <span class="rimetCPUavail">System Resources:    70% Free</span></div><br class="abLineB9"><br class="abLineB10">
+			<span id="okButton" style="top: 10px;bottom:unset;right: 20px;font-family: &quot;Pixelated MS Sans Serif Bold&quot; , &quot;Pixelated MS Sans Serif&quot;, &quot;MS Sans Serif&quot;, &quot;Microsoft Sans Serif&quot;, &quot;Microsoft Sans Serif&quot;, Segoe UI, Roboto, Fazu Sans, Helvetica, Arial;letter-spacing: 1px;font-weight: normal;" class="button" data-id="0">OK</span>
+			<a id="langBtn0" style="display: none !important;" class="button" onclick="toggleTheme('default.css')" name="language" value="Language 0">English</a>
+<a id="langBtn1" style="display: none !important;" class="button" onclick="toggleTheme('jp-language.css')" name="language" value="Language 1">日本語</a>
+			</span>
+</div>
+</div>
+
+</div>
+		</div>
+		<div class="window closed" data-title="Inter Browser">
+		
+		<style>
+		#interTabs {
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+<div id="interTabs" class="tabs" style="margin-top: 0 !important;">
+  <menu role="tablist" aria-label="Control Panel">
+    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+       Tab 1
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+       Tab 2
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+       Tab 3
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" tabindex="-1">
+       Tab 4
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5" tabindex="-1">
+       Tab 5
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-6" id="tab-6" tabindex="-1">
+       Tab 6
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-7" id="tab-7" tabindex="-1">
+      Options
+        </button>
+  </menu>
+  <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+<embed src="https://ethanf44.xyz/inter" frameborder="0" id="Inter" style="border: none;" classs="interFrame" name="interFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+  </div>
+  <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+<embed src="https://ethanf44.xyz/inter" frameborder="0" id="Inter" style="border: none;" classs="interFrame" name="interFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+  </div>
+  <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+<embed src="https://ethanf44.xyz/inter" frameborder="0" id="Inter" style="border: none;" classs="interFrame" name="interFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+  </div>
+ <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" hidden>
+<embed src="https://ethanf44.xyz/inter" frameborder="0" id="Inter" style="border: none;" classs="interFrame" name="interFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+  </div>
+  <div id="panel-5" role="tabpanel" tabindex="0" aria-labelledby="tab-5" hidden>
+<embed src="https://ethanf44.xyz/inter" frameborder="0" id="Inter" style="border: none;" classs="interFrame" name="interFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+  </div>
+  <div id="panel-6" role="tabpanel" tabindex="0" aria-labelledby="tab-6" hidden>
+<embed src="https://ethanf44.xyz/inter" frameborder="0" id="Inter" style="border: none;" classs="interFrame" name="interFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+  </div>
+ <div id="panel-7" role="tabpanel" tabindex="0" aria-labelledby="tab-7" hidden>
+Work In Progress: The Demo Tab
+  </div>
+</div>
+		
+			</div>
+		
+			<div class="window closed" data-title="Web Virtual PC">
+<embed src="//ethanf44.xyz/webvirtualpc.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+		</div>
+		
+		
+			<div class="window closed" data-title="Notepad">
+			<iframe src="https://98.js.org/programs/notepad/index.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen></iframe>
+		</div>
+		
+				<div class="window closed" data-title="Comments">
+			<embed src="hcb.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+			</div>
+
+		<div class="ChatangoChat">
+		<div class="window closed" data-title="Rimet Chat">
+<script id="cid0020000301372531515" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"rimet-chat","arch":"js","styles":{"a":"ffffff","e":"ffffff","f":0,"h":"ffffff","i":0,"l":"cccccc","m":"dadada","q":"ffffff","sbc":"bbbbbb","fwtickm":1}}</script>
+</div>
+</div>
+
+
+<div class="window closed" data-title="Control Panel">
+
+
+
+<!-- Themes working when you refresh -->
+<script>
+// *** TO BE CUSTOMISED ***
+
+var style_cookie_name = "theme" ;
+var style_cookie_duration = 30 ;
+var style_domain = "geocities.ws" ;
+
+// *** END OF CUSTOMISABLE SECTION ***
+// You do not need to customise anything below this line
+
+function switch_style ( css_title )
+{
+// You may use this script on your site free of charge provided
+// you do not remove this notice or the URL below. Script from
+// https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+  var i, link_tag ;
+  for (i = 0, link_tag = document.getElementsByTagName("link") ;
+    i < link_tag.length ; i++ ) {
+    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+      link_tag[i].title) {
+      link_tag[i].disabled = true ;
+      if (link_tag[i].title == css_title) {
+        link_tag[i].disabled = false ;
+      }
+    }
+    set_cookie( style_cookie_name, css_title,
+      style_cookie_duration, style_domain );
+  }
+}
+function set_style_from_cookie()
+{
+  var css_title = get_cookie( style_cookie_name );
+  if (css_title.length) {
+    switch_style( css_title );
+  }
+}
+function set_cookie ( cookie_name, cookie_value,
+    lifespan_in_days, valid_domain )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+    var domain_string = valid_domain ?
+                       ("; domain=" + valid_domain) : '' ;
+    document.cookie = cookie_name +
+                       "=" + encodeURIComponent( cookie_value ) +
+                       "; max-age=" + 60 * 60 *
+                       24 * lifespan_in_days +
+                       "; path=/" + domain_string ;
+}
+function get_cookie ( cookie_name )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+	var cookie_string = document.cookie ;
+	if (cookie_string.length != 0) {
+		var cookie_array = cookie_string.split( '; ' );
+		for (i = 0 ; i < cookie_array.length ; i++) {
+			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+			if (cookie_value != null) {
+				return decodeURIComponent ( cookie_value[1] ) ;
+			}
+		}
+	}
+	return '' ;
+}
+
+
+
+
+
+
+
+function placeholder()
+{
+document.getElementById("placeholder").style.display = "none";
+}
+
+function set_cookie ( cookie_name, cookie_value,
+    lifespan_in_days, valid_domain )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+    var domain_string = valid_domain ?
+                       ("; domain=" + valid_domain) : '' ;
+    document.cookie = cookie_name +
+                       "=" + encodeURIComponent( cookie_value ) +
+                       "; max-age=" + 60 * 60 *
+                       900000 * lifespan_in_days +
+                       "; path=/" + domain_string ;
+}
+function get_cookie ( cookie_name )
+{
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+	var cookie_string = document.cookie ;
+	if (cookie_string.length != 0) {
+		var cookie_array = cookie_string.split( '; ' );
+		for (i = 0 ; i < cookie_array.length ; i++) {
+			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+			if (cookie_value != null) {
+				return decodeURIComponent ( cookie_value[1] ) ;
+			}
+		}
+	}
+	return '' ;
+}
+
+
+</script>
+<!-- end of Themes working when you refresh-->
+
+<br>
+<style>
+#window6 > .wincontent {
+  padding     : 1.5em !important;
+  line-height : 1;
+}
+
+.tabbed{
+  float : left;
+  width: 90%;
+position: absolute;
+top: 3px;
+}
+
+.tabbed > input{
+  display : none;
+}
+
+.tabbed > section > h1{
+  float       : left;
+  box-sizing  : border-box;
+  margin      : 0;
+  margin-right: -5px;
+  padding     : 0.5em 0.5em 0;
+  overflow    : hidden;
+  font-size   : 11px;
+  font-weight : normal;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", "Microsoft Sans Serif", "Pixelated MS Sans Serif", Segoe UI, Roboto, Fazu Sans, Helvetica, Arial; 
+}
+
+.tabbed > input:first-child + section > h1{
+  padding-left : 1em;
+}
+
+.tabbed > section > h1 > label{
+  display                 : block;
+  padding                 : 0.25em 0.75em;
+  border                  : 1px solid #ddd;
+  border-bottom           : none;
+  border-top-left-radius  : 4px;
+  border-top-right-radius : 4px;
+  box-shadow              : 0 0 0.5em rgba(0,0,0,0.0625);
+  background              : #fff;
+  cursor                  : pointer;
+     -moz-user-select     : none;
+      -ms-user-select     : none;
+  -webkit-user-select     : none;
+}
+
+.tabbed > section > div{
+  position      : relative;
+  z-index       : 1;
+  float         : right;
+  box-sizing    : border-box;
+  width         : 100%;
+  height        :  400px !important;
+  margin        : 31px 0 0 -100%;
+  padding       : 0.5em 0.75em;
+  border        : 1px solid #ddd;
+  border-radius : 4px;
+  box-shadow    : 0 0 0.5em rgba(0,0,0,0.0625);
+  background    : #fff;
+  top: -10px;
+}
+
+.tabbed > input:checked + section > h1{
+  position : relative;
+  z-index  : 2;
+}
+
+.tabbed > input:not(:checked) + section > div{
+  display : none;
+}
+
+.tabbed > section > h1 > label {
+    border: none;
+    background: silver;
+    box-shadow: inset 1px 1px #fff, inset -1px 0 #000, inset -2px 0 gray;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.tabbed > section > div {
+    border: none;
+        background: silver;
+box-shadow: rgb(10, 10, 10) -1px -1px inset, grey 1px 1px inset, grey -2px -2px inset, rgb(255, 255, 255) 2px 2px inset;
+}
+
+#window6 > .windowHeader > .winmaximize {
+  display: none !important;
+}
+
+#window6 > .wincontent > .ui-resizable-handle {
+  display: none !important;
+}
+
+</style>
+<center>
+<div class="tabs">
+  <menu role="tablist" aria-label="Control Panel">
+    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+         Desktop
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+          Credits
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+          Flags
+        </button>
+  </menu>
+  <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+      <img src="RimetDisplayPC.png"><!--<div id="themePreview" class="bgpreview" style="width: 152px !important; height: 111px !important; position: absolute !important; top: 24px; right: 122px; box-shadow: none !important;"></div>--><br><br>
+<div class="dropdown">
+  <a id="themeButton" class="button">Select a Theme</a>
+  <div class="themeSelect-content" style="z-index: 1000000;"><br>
+  <strong>Default</strong>
+<a onclick="switch_style('Rimet Default');return false;" name="theme" value="Theme 0" id="t0">Rimet Default by Fasdus, APH6000.</a>
+<strong>Microsoft Windows</strong>
+<a onclick="switch_style('theme5');return false;" name="theme" value="Theme 5" id="t5">Win10 Theme by APH6000, Fasdus</a>
+<a onclick="switch_style('theme12');return false;" name="theme" value="Theme 12" id="t12">WinXP Theme by APH6000, Fasdus</a>
+<a onclick="switch_style('theme6');return false;" name="theme" value="Theme 6" id="t6">Underwater Theme from MS Plus! 98</a>
+<a onclick="switch_style('theme13');return false;" name="theme" value="Theme 13" id="t13">Windows Classic Theme by APH6000</a>
+<a onclick="switch_style('theme14');return false;" name="theme" value="Theme 14" id="t14">Windows Standard Theme by APH6000</a>
+<a onclick="switch_style('theme15');return false;" name="theme" value="Theme 14" id="t14">Windows 3.1 Theme by APH6000, Fasdus</a>
+<strong>Other Operating Systems</strong>
+<a onclick="switch_style('theme4');return false;" name="theme" value="Theme 4" id="t4">ScratchOS Water by APH6000</a>
+<a onclick="switch_style('theme17');return false;" name="theme" value="Theme 4" id="t4">Windows 93 Theme by FasdusWisdom</a>
+<strong>Person-Based</strong>
+<a onclick="switch_style('theme3');return false;" name="theme" value="Theme 3" id="t3">Capt. Yellow's Theme by CY</a>
+<strong>Rimet Classic-Based</strong>
+<a onclick="switch_style('theme1');return false;" name="theme" value="Theme 1" id="t1">Rimet Classic by Fasdus</a>
+<a onclick="switch_style('theme8');return false;" name="theme" value="Theme 8" id="t8">Watervapor Theme by Fasdus</a>
+<a onclick="switch_style('theme9');return false;" name="theme" value="Theme 9" id="t9">ECF Web Theme by Fasdus</a>
+<strong>Concept-Based</strong>
+<a onclick="switch_style('theme7');return false;" name="theme" value="Theme 7" id="t7">Window Theme by Fasdus</a>
+<a onclick="switch_style('theme10');return false;" name="theme" value="Theme 10" id="t10">MOS 1.0 Theme by APH6000, Fasdus</a>
+<strong>Game-Based</strong>
+<a onclick="switch_style('theme11');return false;" name="theme" value="Theme 11" id="t11">PaRappa Theme by Fasdus, Anakin Denes</a>
+<strong>Other</strong>
+<a onclick="switch_style('theme2');return false;" name="theme" value="Theme 2" id="t2">Marble Madness by Fasdus</a>
+<a onclick="switch_style('theme16');return false;" name="theme" value="Theme 16" id="t16">Windows System Colors by APH6000 (exprimental)</a>
+<a id="lmc" style="display: none;" class="dynamic-content" onclick="switch_style('theme65536');return false;" name="theme" value="Theme 65536">???????????????????</a><br>
+</div></div><a id="colorsButton" class="button openWindow" data-id="9" style="padding: 6px 28px 6px 28px !important; margin-left: 3px;">Open Colors</a><br><br>
+           <div class="wplist" style="margin-right: 100px; width: 272px; height: 150px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; font-size: 11px; overflow-y: scroll; overflow-x: hidden; background: #FFF;"><br>
+           <!--<a onclick="bg0()">(None)</a><br><br>-->
+           <strong>Windows XP</strong><br><br>
+           <a onclick="bg1()">Ascent</a><br><br>
+           <a onclick="bg2()">Autumn</a><br><br>
+           <a onclick="bg3()">Azul</a><br><br>
+           <a onclick="bg4()">Bliss</a><br><br>
+           <a onclick="bg5()">Crystal</a><br><br>
+           <a onclick="bg6()">Follow</a><br><br>
+           <a onclick="bg7()">Friend</a><br><br>
+           <a onclick="bg8()">Home</a><br><br>
+           <a onclick="bg9()">Moon flower</a><br><br>
+           <a onclick="bg10()">Peace</a><br><br>
+           <a onclick="bg11()">Power</a><br><br>
+           <a onclick="bg12()">Purple flower</a><br><br>
+           <a onclick="bg13()">Radiance</a><br><br>
+           <a onclick="bg14()">Red moon desert</a><br><br>
+           <a onclick="bg15()">Ripple</a><br><br>
+           <a onclick="bg16()">Stonehenge</a><br><br>
+           <a onclick="bg17()">Tulips</a><br><br>
+           <a onclick="bg18()">Vortec space</a><br><br>
+           <a onclick="bg19()">Wind</a><br><br>
+           <a onclick="bg20()">Windows XP</a><br><br>
+            <strong>Windows XP (Tiled)</strong><br><br>
+           <a onclick="xpti1()">Blue Lace 16</a><br><br>
+           <a onclick="xpti2()">Coffee Bean</a><br><br>
+           <a onclick="xpti3()">Feather Texture</a><br><br>
+           <a onclick="xpti4()">Gone Fishing</a><br><br>
+           <a onclick="xpti5()">Prairie Wind</a><br><br>
+           <a onclick="xpti6()">Rhododendron</a><br><br>
+           <a onclick="xpti7()">River Sumida</a><br><br>
+           <a onclick="xpti8()">Santa Fe Stucco</a><br><br>
+           <a onclick="xpti9()">Soap Bubbles</a><br><br>
+           <a onclick="xpti10()">Zapotec</a><br><br>
+            <strong>Rimet Backgrounds</strong><br><br>
+           <a onclick="rog1()">Always Grey</a><br><br>
+           <a onclick="rog2()">Always Teal</a><br><br>
+           <a onclick="rog3()">AD40 Psycho Deli B</a><br><br>
+           <a onclick="rog4()">Rimet Water</a><br><br>
+           <strong>Windows NT 4.0 (Tiled)</strong><br><br>
+           <a onclick="nt4ti1()">Blue Monday</a><br><br>
+           <a onclick="nt4ti2()">Fiddle Head</a><br><br>
+           <a onclick="nt4ti3()">Furry Dog</a><br><br>
+           <a onclick="nt4ti4()">Geometrix</a><br><br>
+           <a onclick="nt4ti5()">Hazy Autumn 16</a><br><br>
+           <a onclick="nt4ti6()">Hiking Boot</a><br><br>
+           <a onclick="nt4ti7()">Leaf Fossils 16</a><br><br>
+           <a onclick="nt4ti8()">Leather 16</a><br><br>
+           <a onclick="nt4ti9()">Maple Trails</a><br><br>
+           <a onclick="nt4ti10()">Petroglyph 16</a><br><br>
+           <a onclick="nt4ti11()">Seaside</a><br><br>
+           <a onclick="nt4ti12()">Snakeskin</a><br><br>
+           <a onclick="nt4ti13()">Solstice</a><br><br>
+           <a onclick="nt4ti14()">Swimming Pool</a><br><br>
+           <a onclick="nt4ti15()">Upstream 16</a><br><br>
+           </div><br><input type='file' id='getval' class="wallChooser">
+  </div>
+  <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+<center><br><br>
+          <h1 class="crdts-text" style="margin-bottom: 5px !important;">Credits:</h2>
+<hr>
+<p>(<a href="https://html5-templates.com">https://html5-templates.com</a>) <span class="abttempSrc"> HTML5 Templates for the 'Windows' template.</span></p>
+<p>(<a href="http://thesitewizard.com/">http://thesitewizard.com/</a>) <span class="abtthemeSrc">The Site Wizard for the theme code.</span></p>
+<p><a href="https://aph6002.neocities.org">APH</a>, <a href="https://dalek2004.neocities.org/">Dalek2004</a><span class="adc1">, and </span><a href="https://the-cy-zone.neocities.org/">Captain Yellow</a><span class="adc2"> for using and making themes for Rimet.</span></p><br class="abLineB10">
+<h1 class="sysinfo-title">System Info:</h2><hr>
+<p id="uA"></p>
+<span class="theme-credit">Current theme: </span><br>
+<!--<a target="blank" class="theme" href="https://twitter.com/MamoruOkami/"><span class="cpl-clink3">Japanese support<br>by Mamoru Subs</span></a><br><br>
+
+Removed because Japanese was cumbersome to maintain and it broke elements when language is changed.-->
+<p class="cpl-crInfo" style="font-size: 10px;">&copy; 2019-2021 FasdusWisdom</p><br><br>
+<h2 class="reInst-text">Reinstallation:</h2><br>
+<a target="_top" id="reset" href="setup.html"><div id="reInstButton" class="button"><span class="reInst">Reinstall Rimet</span></div></a></center>
+  </div>
+  <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+<center><br><br>
+          <h2 class="crdts-text" style="margin-bottom: 5px !important;">Credits:</h2>
+<a target="blank" class="theme" href="https://www.thesitewizard.com/javascripts/change-style-sheets.shtml"><span class="cpl-clink1">Theme-changing Script<br> from The Site Wizard</span></a><br>
+<a target="blank" class="theme" href="https://microsoft.com/windows"><span class="cpl-clink2">Windows 10, XP and 98<br>created & owned by Microsoft</span></a><br>
+<!--<a target="blank" class="theme" href="https://twitter.com/MamoruOkami/"><span class="cpl-clink3">Japanese support<br>by Mamoru Subs</span></a><br><br>
+
+Removed because Japanese was cumbersome to maintain and it broke elements when language is changed.-->
+<p class="cpl-crInfo" style="font-size: 10px;">&copy; 2019-2021 FasdusWisdom</p><br><br>
+<h2 class="reInst-text">Reinstallation:</h2><br>
+<a target="_top" id="reset" href="setup.html"><div id="reInstButton" class="button"><span class="reInst">Reinstall Rimet</span></div></a></center>
+  </div>
+  <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+  <center><br><br>
+        <br><br><br><br>
+         <p style="font-size: 11px;">Input flag:</p>
+         <br>
+         <script type="text/javascript">// <![CDATA[
+    var search_htm_url = "index.html?startup=no&?flag=";
+    function searchPage() {
+    if ((document.searchpage.keyword.value.length == 0)
+    || (document.searchpage.keyword.value == " ")) {
+    alert("Please enter a flag!");
+    } else {
+    sel = document.searchpage.and_or.selectedIndex;
+    location.href = search_htm_url
+    + escape(document.searchpage.keyword.value)
+    
+    }
+    return false;
+    }
+    document.write('<form name="searchpage" onSubmit="return searchPage()">'
+    +'<input type="text" size=20 name="keyword"><br><p style="font-size: 11px;">Startup screen will be disabled<br>when you use flags from here.</p> '
+    +'<div onClick="searchPage()" style="padding: 5px 28px 5px 28px !important; position: absolute; bottom: 13px !important; right: 15px !important; font-size: 11px;" class="button" value="Apply" onClick="searchPage()">Apply</a></div><br>'
+    +'<select style="display: none !important" name="and_or" size=0>'
+    +'</select><br></form>');
+// ]]></script>
+<a href="index.html" class="button" style="padding: 5px 28px 5px 28px !important; position: absolute; bottom: 13px !important; right: 110px !important; font-size: 11px;">Clear</a>
+     </center></div>
+
+
+
+<script>
+
+function bg0() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('')"; 
+}
+
+function bg1() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Ascent.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Ascent.jpg')";  
+}
+
+function bg2() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Autumn.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Autumn.jpg')";  
+}
+
+function bg3() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Azul.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Azul.jpg')";  
+}
+
+function bg4() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Bliss.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Bliss.jpg')";  
+}
+
+function bg5() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Crystal.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Crystal.jpg')";  
+}
+
+function bg6() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Follow.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Follow.jpg')";  
+}
+
+function bg7() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Friend.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Friend.jpg')";  
+}
+
+function bg8() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Home.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Home.jpg')";  
+}
+
+function bg9() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Moon flower.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Moon flower.jpg')";  
+}
+
+function bg10() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Peace.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Peace.jpg')";  
+}
+
+function bg11() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Power.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Power.jpg')";  
+}
+
+function bg12() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Purple flower.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Purple flower.jpg')";  
+}
+
+function bg13() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Radiance.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Radiance.jpg')";  
+}
+
+function bg14() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Red moon desert.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Red moon desert.jpg')";  
+}
+
+function bg15() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Ripple.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Ripple.jpg')";  
+}
+
+function bg16() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Stonehenge.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Stonehenge.jpg')";  
+}
+
+function bg17() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Tulips.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Tulips.jpg')";  
+}
+
+function bg18() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Vortec space.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Vortec space.jpg')";  
+}
+
+function bg19() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Wind.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Wind.jpg')";  
+}
+
+function bg20() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxp/Windows XP.jpg')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxp/Windows XP.jpg')";  
+}
+
+function xpti1() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Blue-Lace-16.png')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Blue-Lace-16.png')";  
+}
+
+function xpti2() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Coffee-Bean.png')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Coffee-Bean.png')";  
+}
+/*Real*/
+function xpti3() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/FeatherTexture.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/FeatherTexture.png')";  
+}
+
+function xpti4() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Gone-Fishing.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Gone-Fishing.png')";  
+}
+
+function xpti5() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Prairie-Wind.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Prairie-Wind.png')";  
+}
+
+function xpti6() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Rhododendron.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Rhododendron.png')";  
+}
+
+function xpti7() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/River-Sumida.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/River-Sumida.png')";  
+}
+
+function xpti8() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Santa-Fe-Stucco.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Santa-Fe-Stucco.png')";  
+}
+
+function xpti9() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Soap-Bubbles.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Soap-Bubbles.png')";  
+}
+
+function xpti10() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsxptile/Zapotec.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsxptile/Zapotec.png')";  
+}
+
+function nt4ti1() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Blue%20Monday.png')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Blue%20Monday.png')";  
+}
+
+function nt4ti2() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Fiddle%20Head.png')"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Fiddle%20Head.png')";  
+}
+
+function nt4ti3() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Furry%20Dog.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Furry%20Dog.png')";  
+}
+
+function nt4ti4() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Geometrix.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Geometrix.png')";  
+}
+
+function nt4ti5() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Hazy%20Autumn%2016.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Hazy%20Autumn%2016.png')";  
+}
+
+function nt4ti6() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Hiking%20Boot.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Hiking%20Boot.png')";  
+}
+
+function nt4ti7() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Leaf%20Fossils%2016.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Leaf%20Fossils%2016.png')";  
+}
+
+function nt4ti8() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Leather%2016.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Leather%2016.png')";  
+}
+
+function nt4ti9() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Maple%20Trails.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Maple%20Trails.png')";  
+}
+
+function nt4ti10() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Petroglyph%2016.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Petroglyph%2016.png')";  
+}
+
+function nt4ti11() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Seaside.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Seaside.png')";  
+}
+
+function nt4ti12() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Snakeskin.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Snakeskin.png')";  
+}
+
+function nt4ti13() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Solstice.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Solstice.png')";  
+}
+
+function nt4ti14() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Swimming%20Pool.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Swimming%20Pool.png')";  
+}
+
+function nt4ti15() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('backgroundsmisctile/Upstream%2016.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('backgroundsmisctile/Upstream%2016.png')";  
+}
+
+function rog1() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('always_grey.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('always_grey.png')";  
+}
+
+function rog2() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('always_teal.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('always_teal.png')";  
+}
+
+function rog3() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('ad40-pdb.png')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('ad40-pdb.png')"; 
+}
+
+function rog4() {
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url('water.jpeg')"; 
+       document.getElementById('RimetOuter').style.backgroundSize = "unset";
+      document.getElementById('themePreview').style.backgroundImage = "url('water.jpeg')"; 
+}
+
+
+function cs_change_music(music)
+{
+document.getElementById("my-audio").pause();
+document.getElementById("my-audio").setAttribute('src', music);
+document.getElementById("my-audio").load();
+    $(".audioplayer").addClass("audioplayer-playing");
+    document.getElementById("my-audio").play();
+}
+
+</script>
+
+  </div>
+  
+
+		</div>
+<div class="window closed" data-title="Rimetunes">
+			<div class="wplist" style="margin-right: 100px; width: 100%; height: 150px; box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; font-size: 11px; overflow-y: scroll; overflow-x: hidden; background: #FFF;"><ul style="list-style: none">
+  <li style="margin-left: 20px !important; margin-top: 10px !important; line-height: 200%;"><h1>Choose a song</h1>
+    <ul id="list">
+   <h2>Miscellaneous:</h2>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/air.mp3');">Air</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/Firebomb.mp3');">Firebomb</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/ethanf44/files/Audio/bgm.mp3');">Cerulean Nights</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/ethanf44/files/Audio/CeruleanNightsRedux.wav');">Cerulean Nights Redux</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/Kings.mp3');">Kings</a></li>
+<h2>3DNA Loops:</h2>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/beach%20world%20-%20waves.wav');">beach world - waves</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/FunknRollin.mp3');">Funk 'n' Rollin'</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Jupiter.mp3');">Jupiter</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Shyla.mp3');">Shyla</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Undertones.mp3');">Undertones</a></li>
+
+<h2>WebTV MIDIs:</h2>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/chill_jingle.mp3');">Chill Jingle</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/Midterm.mp3');">Midterm</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/NiteFunk.mp3');">Nite Funk</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/PianoJz1.mp3');">Piano Jazz 1</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/PianoJz2.mp3');">Piano Jazz 2</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/OnBoogie.mp3');">On Boogie</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/OnFire.mp3');">On Fire</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/SlowDay.mp3');">Slow Day</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/TastyWav.mp3');">Tasty Wave</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/TurkishMarch.mp3');">Turkish March</a></li>
+    <h2>Windows MIDIs:</h2>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/almonds.mp3');">Almonds</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Ballade.mp3');">Ballade</a></li>
+<li><a onclick="cs_change_music('https://geocities.ws/ethanf44/files/Audio/CANYON.mp3');">Canyon</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Clouds.mp3');">Clouds</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/cssamp1.mp3');">CSSAmp 1</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/ie4chan.mp3');">IE4 Channel</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Jazz.mp3');">Jazz</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/mericana.mp3');">Mericana</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/metblast.mp3');">Metblast</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/mwvblues.mp3');">MWV Blues</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/someband.mp3');">Some Band</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Minuet.mp3');">Minuet</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Reggae.mp3');">Reggae</a></li>
+<li><a onclick="cs_change_music('http://www.geocities.ws/aph6000/mp3/Passport.mid.mp3');">Passport</a></li>
+<li><a onclick="cs_change_music('http://geocities.ws/ethanf44/files/Audio/Town.mid.mp3');">Town</a></li>
+<h2>Internet Radio:</h2>
+<li><a onclick="cs_change_music('https://s2.radio.co/s2b2b68744/listen');">BadRadio</a></li>
+<li><a onclick="cs_change_music('https://streamer.radio.co/sd7b28e5f3/listen');">Mambo Radio</a></li>
+<li><a onclick="cs_change_music('https://radio.plaza.one/ogg');">Nightwave Plaza</a></li>
+
+</ul>
+  </li>
+</ul></div>
+<audio style="width:100%;height:28px;" id="my-audio" controls loop>
+  <source id="src" src="http://www.geocities.ws/aph6000/mp3/almonds.mp3" type="audio/mpeg">
+</audio>
+
+<script src="audioplayer.js"></script>
+		<script>
+			$(function() {
+				$('audio').audioPlayer();
+			});
+		</script>
+
+		</div>
+		
+		
+			<div class="window closed" data-title="DigiShell Viewer">
+<embed src="https://digishell.neocities.org/rimetviewer.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+</div>
+
+<div class="window closed" data-title="Colors"><center>
+<br>
+<div id="sliders" style="display: inline-block !important;"><div id="colouredSlider" class="slider"></div><span id="colorslTxt" style="position: absolute; visibility: hidden;">Colors</span><br><div id="bwSlider" class="slider"></div><span id="briteslTxt" style="position: absolute; visibility: hidden;">Brightness</span></div>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.slider {
+  width: 100px;
+  border-radius: 0;
+}
+
+#colouredSlider {
+  background: -webkit-linear-gradient(left, red, orange, yellow, lime, aqua, blue, purple, red);
+  background: -o-linear-gradient(left, red, orange, yellow, lime, aqua, blue, purple, red);
+  background: -moz-linear-gradient(left, red, orange, yellow, lime, aqua, blue, purple, red);
+  background: linear-gradient(to right, red, orange, yellow, lime, aqua, blue, purple, red);
+}
+
+#colouredSlider .ui-slider-range {
+  background: red;
+  border-radius: 0;
+}
+
+#colouredSlider .ui-state-default,
+.ui-widget-content .ui-state-default {
+  background: none;
+  background-color: red;
+   border-radius: 0;
+}
+
+#bwSlider {
+  background: -webkit-linear-gradient(black, white);
+  background: -o-linear-gradient(black, white);
+  background: -moz-linear-gradient(black, white);
+  background: linear-gradient(to right, black, white);
+   border-radius: 0;
+}
+
+#bwSlider .ui-slider-range {
+  background: black;
+  border-radius: 0;
+}
+
+#bwSlider .ui-state-default,
+.ui-widget-content .ui-state-default {
+  background: none;
+  background-color: rgb(130, 130, 130);
+   border-radius: 0;
+}
+</style>
+<script>
+var hsl1 = 0;
+var hsl2 = 50;
+
+var colourslider = $("#colouredSlider");
+colourslider.slider({
+  max: 360,
+  slide: setColour,
+  change: setColour
+});
+
+var bwslider = $("#bwSlider");
+bwslider.slider({
+  max: 100,
+  value: 50,
+  slide: setColour,
+  change: setColour
+});
+
+function setColour() {
+  hsl1 = colourslider.slider("option", "value");
+  hsl2 = bwslider.slider("option", "value");
+
+  $('.windowHeader, #RimetOuter').css('background', "hsl(" + hsl1 + ", 100%, " + hsl2 + "%)");
+  $("#colouredSlider .ui-state-default").css("background-color", "hsl(" + hsl1 + ", 100%, 50%)");
+  $("#bwSlider .ui-state-default").css("background-color", "rgb(" + hsl2 * 2.5 + "," + hsl2 * 2.5 + "," + hsl2 * 2.5 + ")");
+}
+</script></center>
+  
+</div>
+<div id="progMan" style="display: none;">
+<div class="window open" data-title="Program Manager" style="overflow: hidden;">
+	<div id="icons" class="pmIcns">
+			<center><div id="picon1" class="prmIcon" style="left: 0px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="0"><div class="icon1BG" style="background-image: url('icons/Rimet32.png'); width: 32px; height: 32px;"></div><br><div id="ico1Text" class="iconText"><span class="dicon">About Rimet</span></div></div></div></center>
+			
+			<center><div id="picon2" class="prmIcon" style="left: 50px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="1"><div class="icon2BG" style="background-image: url('icons/32Inter.png'); width: 32px; height: 32px;"></div><br><div id="ico2Text" class="iconText"><span class="dicon">Inter Browser</span></div></div></div><center>
+			
+			<center><div id="picon3" class="prmIcon" style="left: 105px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="2"><div class="icon3BG" style="background-image: url('icons/32WVPC.png'); width: 32px; height: 32px;"></div><br><div id="ico3Text" class="iconText"><span class="dicon">Web VPC</span></div></div></div></center>
+			
+			<center><div id="picon4" class="prmIcon" style="left: 150px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="3"><div class="icon4BG" style="background-image: url('icons/32Notepad.png'); width: 32px; height: 32px;"></div><br><div id="ico4Text" class="iconText"><span class="dicon">Notepad</span></div></div></div></center>
+			
+			<center><div id="picon5" class="prmIcon" style="left: 205px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="4"><div class="icon5BG" style="background-image: url('icons/HTMLComments.png'); width: 32px; height: 32px; image-rendering: pixelated; background-size:100%; background-repeat: no-repeat;"></div><br><div id="ico5Text" class="iconText"><span class="dicon">Comments</span></div></div></div></center>
+			
+			<center><div id="picon6" class="prmIcon" style="left: 265px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="5"><div class="icon6BG" style="background-image: url('icons/Chatango.png'); width: 32px; height: 32px; image-rendering: pixelated; background-size:100%; background-repeat: no-repeat;"></div><br><div id="ico6Text" class="iconText"><span class="dicon">Chatango</span></div></div></div></center>
+			
+			<center><div id="picon7" class="prmIcon" style="left: 325px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="6"><div class="icon7BG" style="background-image: url('icons/32Control.png'); width: 32px; height: 32px;"></div><br><div id="ico7Text" class="iconText"><span class="dicon">Control Panel</span></div></div></div></center>
+			
+			<center><div id="picon8" class="prmIcon" style="left: 373px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="7"><div class="icon8BG" style="background-image: url('icons/32Rimetunes.png'); width: 32px; height: 32px;"></div><br><div id="ico8Text" class="iconText"><span class="dicon">Rimetunes</span></div></div></div></center>
+			
+			<center><div id="picon9" class="prmIcon" style="left: 435px;position: relative;"><div id="iconDesktop" class="desktopIcon" data-id="8"><div class="icon9BG" style="background-image: url('icons/digishellogo.png'); width: 32px; height: 32px; background-size:100%; background-repeat: no-repeat;"></div><br><div id="ico9Text" class="iconText"><span class="dicon">DigiShell Viewer</span></div></div></div></center>
+		</div>
+</div>
+</div>
+
+	<div class="window closed" data-title="Titan Chat">
+<embed src="https://titanembeds.com/embed/719015734503800913?css=307#" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+</div>
+
+	<div class="window closed" data-title="Typewriter">
+<embed src="richtext.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" height="100%" allowfullscreen>
+</div>
+
+<!--
+
+
+IIIIIIIIII        CCCCCCCCCCCCC     OOOOOOOOO     NNNNNNNN        NNNNNNNN   SSSSSSSSSSSSSSS 
+I::::::::I     CCC::::::::::::C   OO:::::::::OO   N:::::::N       N::::::N SS:::::::::::::::S
+I::::::::I   CC:::::::::::::::C OO:::::::::::::OO N::::::::N      N::::::NS:::::SSSSSS::::::S
+II::::::II  C:::::CCCCCCCC::::CO:::::::OOO:::::::ON:::::::::N     N::::::NS:::::S     SSSSSSS
+  I::::I   C:::::C       CCCCCCO::::::O   O::::::ON::::::::::N    N::::::NS:::::S            
+  I::::I  C:::::C              O:::::O     O:::::ON:::::::::::N   N::::::NS:::::S            
+  I::::I  C:::::C              O:::::O     O:::::ON:::::::N::::N  N::::::N S::::SSSS         
+  I::::I  C:::::C              O:::::O     O:::::ON::::::N N::::N N::::::N  SS::::::SSSSS    
+  I::::I  C:::::C              O:::::O     O:::::ON::::::N  N::::N:::::::N    SSS::::::::SS  
+  I::::I  C:::::C              O:::::O     O:::::ON::::::N   N:::::::::::N       SSSSSS::::S 
+  I::::I  C:::::C              O:::::O     O:::::ON::::::N    N::::::::::N            S:::::S
+  I::::I   C:::::C       CCCCCCO::::::O   O::::::ON::::::N     N:::::::::N            S:::::S
+II::::::II  C:::::CCCCCCCC::::CO:::::::OOO:::::::ON::::::N      N::::::::NSSSSSSS     S:::::S
+I::::::::I   CC:::::::::::::::C OO:::::::::::::OO N::::::N       N:::::::NS::::::SSSSSS:::::S
+I::::::::I     CCC::::::::::::C   OO:::::::::OO   N::::::N        N::::::NS:::::::::::::::SS 
+IIIIIIIIII        CCCCCCCCCCCCC     OOOOOOOOO     NNNNNNNN         NNNNNNN SSSSSSSSSSSSSSS   
+
+
+
+
+-->
+
+			<div id="icons" class="Desktop-Icons">
+			<div id="icon1"><div id="iconDesktop" class="desktopIcon" data-id="6"><div class="icon1BG" style="background-image: url('icons/32Control.png'); width: 32px; height: 32px;"></div><br><div id="icon1Text" class="iconText"><span class="dicon">Control Panel</span></div></div></div>
+			<br><br><br><br><br><br><br>
+			<div id="icon2"><div id="iconDesktop" class="desktopIcon" data-id="1"><div class="icon2BG" style="background-image: url('icons/32Inter.png'); width: 32px; height: 32px;"></div><br><div id="icon2Text" class="iconText"><span class="dicon">Inter Browser</span></div></div></div>
+			<br><br><br><br><br><br><br>
+			<div id="icon3"><div id="iconDesktop" class="desktopIcon" data-id="2"><div class="icon3BG" style="background-image: url('icons/32WVPC.png'); width: 32px; height: 32px;"></div><br><div id="icon3Text" class="iconText"><span class="dicon">Web VPC</span></div></div></div>
+			<br><br><br><br><br><br><br>
+			<div id="icon4"><div id="iconDesktop" class="desktopIcon" data-id="7"><div class="icon4BG" style="background-image: url('icons/32Rimetunes.png'); width: 32px; height: 32px; margin-left: 3px;"></div><br><div id="icon4Text" style="margin-left: -8px !important;" class="iconText"><span class="dicon">Rimet Tunes</span></div></div></div>
+			<br><br><br><br><br><br><br>
+				<!--<div id="icon4"><div id="iconDesktop" class="desktopIcon" data-id="7"><span style="font-family: Jomolhari, Times, Times New Roman !important; color: red !important; font-size: 32px; text-shadow: 0 0 3px #000000, 0 0 5px #000000; font-weight: bold; position: relative; left: 5px;">F</span><br><br><div id="icon4Text" class="iconText"><span class="dicon" id="i4t">Flag</span></div></div></div>-->
+		</div>
+		<script>
+		
+/*$(function() {
+  $('#iconDesktop').hover(function() {
+    $('.iconText').css('background-color', 'rgb(0, 0, 128)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.iconText').css('background-color', '');
+  });
+});*/
+		
+    $(document).ready(function() {
+        $(function() { $('#icon1, #icon2, #icon3, #icon4').draggable(); });
+    });
+
+$(document).ready(function(){
+  $(".desktopIcon").dblclick(function(){
+    openWindow($(this).attr("data-id"));
+  });
+});
+
+$(document).ready(function(){
+  $("#iconDesktop").dblclick(function(){
+    openWindow($(this).attr("data-id"));
+  });
+});
+
+$(document).ready(function(){
+  $("#okButton.button").click(function(){
+  	$("#window0").addClass("closed");
+	$("#minimPanel0").addClass("closed");
+});
+});
+
+
+
+</script>
+		<div id="taskbar" style="z-index: 50000;">
+		
+<script>
+function startTime(){
+    var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+   // var s = date.getSeconds(); 
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    //s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + " " + session;
+    document.getElementById("txt").innerText = time;
+    document.getElementById("txt").textContent = time;
+    
+    setTimeout(startTime, 1000);
+    
+}
+</script>
+<div id="txt"><div id="placeholder">12:00 AM</div></div>
+			<div class="dropup">
+  <button id="startBtn" class="dropbtn" onclick="opensMenu()" title="Click here to begin"><img id="rimetbtn" src="rbutton1.png" /></button>
+    <a class="openWindow" data-id="1"><div class="dropbtn2"><img id="rimetbtn2" src="rbutton2.png"></div></a>
+  <a class="openWindow" data-id="0"><div class="dropbtn3"><img id="rimetbtn3" src="rbutton3.png"></div></a>
+  <div id="startMenu" class="dropup-content">
+      <div class="contents">
+      <!--<div class="rLogo">
+      </div>-->
+	  <script>
+function getQuerystring(key) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == key) {
+            return pair[1];
+        }
+    }
+}
+
+const src = getQuerystring('i');
+document.getElementById('userPFP').src = src; 
+</script>
+      <div class="startItems">
+      <div class="header">
+      <div id="pfpContainer"><img id='userPFP' src='window/liftoff.png' width='30' style='height: 30px !important; width: 30px !important; float: left; margin: 5px; margin-left: 8px; margin-right: 7px;'></div><h1 id="startUsername" style="position: relative; top: 5px;">Administrator</h1><p id="notYou">Not you? <span style="text-decoration: underline;">Click here.</span><br></div>
+      <div class="itemsOnly">
+      <a id="openAbout" class="openWindow" data-id="0">About Rimet</a>
+      <a id="openIntr" class="openWindow" data-id="1">Inter Browser</a>
+      <a id="openWvPC" class="openWindow" data-id="2">Web Virtual PC</a>
+      <a id="openNtpd" class="openWindow" data-id="3">Notepad</a>
+			<a id="openHtCb" class="openWindow" data-id="4">Comments</a>
+			<a id="openChtn" class="openWindow" data-id="5"><span class="ChtnRep">Chatango Chat</span></a>
+			<a id="openCtPl" class="openWindow" data-id="6">Control Panel</a>
+			<a id="openRmTs" class="openWindow" data-id="7">Rimetunes</a>
+      <a id="openDsVr" class="openWindow" data-id="8">DigiShell Viewer</a>
+      <a id="openTnCt" class="openWindow" data-id="11">Titan Chat</a>
+      <a id="openTpWr" class="openWindow" data-id="12">Typewriter</a>
+			</div>
+						<div class="line-separator"></div><div class="footer" style="">
+			<a class="shutDown" href="javascript:close_window();">Shutdown Rimet...</a>
+			<script>
+			
+			document.onkeyup = KeyCheck;       
+function KeyCheck(e)
+{
+   var KeyID = (window.event) ? event.keyCode : e.keyCode;
+   switch(KeyID)
+   {
+      case 18:
+        document.getElementById("startMenu").classList.toggle("startOpened");
+      break;
+   }
+}
+			
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function opensMenu() {
+  document.getElementById("startMenu").classList.toggle("startOpened");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementById("startMenu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('startOpened')) {
+        openDropdown.classList.remove('startOpened');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+  $("#window1 > .windowHeader").dblclick(function(){
+ $("#window1 > .windowHeader > .winmaximize").click(); 
+  });
+});
+
+$(document).ready(function(){
+  $("#window2 > .windowHeader").dblclick(function(){
+ $("#window2 > .windowHeader > .winmaximize").click(); 
+  });
+});
+
+$(document).ready(function(){
+  $("#window3 > .windowHeader").dblclick(function(){
+ $("#window3 > .windowHeader > .winmaximize").click(); 
+  });
+});
+
+$(document).ready(function(){
+  $("#window4 > .windowHeader").dblclick(function(){
+ $("#window4 > .windowHeader > .winmaximize").click(); 
+  });
+});
+
+$(document).ready(function(){
+  $("#window5 > .windowHeader").dblclick(function(){
+ $("#window5 > .windowHeader > .winmaximize").click(); 
+  });
+});
+
+document.getElementById('getval').addEventListener('change', readURL, true);
+function readURL(){
+    var file = document.getElementById("getval").files[0];
+    var reader = new FileReader();
+    reader.onloadend = function(){
+      document.getElementById('RimetDesktop').style.backgroundImage = "none";
+      document.getElementById('RimetOuter').style.backgroundImage = "url(" + reader.result + ")"; 
+      document.getElementById('RimetOuter').style.backgroundSize = "cover";
+      document.getElementById('themePreview').style.backgroundImage = "url(" + reader.result + ")"; 
+    }
+    if(file){
+        reader.readAsDataURL(file);
+    }else{
+    }
+}
+function close_window() {
+//  if (confirm("Are you sure you want to shut down Rimet?")) {
+    close();
+//  }
+}
+
+</script>
+			
+			</div></div>
+			</div>
+  </div>
+</div>
+
+</div>
+<style>
+/*.dock ul {
+  display: inline-block;
+  float: left;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding-right: 76px;
+}
+.dock ul li {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  bottom: 0;
+  vertical-align: bottom;
+  margin-top: -43px;
+}
+.dock ul li a {
+  display: block;
+  height: 135px;
+  margin-bottom: 10px;
+  width: 100px;
+  position: relative;
+  -webkit-transition-property: width, height, margin-top;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-property: width, height, margin-top;
+  -o-transition-duration: 0.5s;
+  -moz-transition-property: width, height, margin-top;
+  -moz-transition-duration: 0.5s;
+}
+.dock ul li a:hover {
+  width: 150px;
+  height: 150px;
+  margin-top: -50px;
+}
+.dock ul li a img {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  padding: 0px 0px 0px 30px;
+}
+*/
+</style>
+<br><br><br>
+
+<div class="dock" style="display:none;">
+  <ul>
+    <li>
+      <a id="dockItem1" class="openWindow" data-id="0"><img src="apple-touch-icon.png" alt="About Rimet"/></a>
+    </li>
+    <li>
+      <a id="dockItem2" class="openWindow" data-id="1"><img src="icons/32Inter.png" alt="Inter Browser"/></a>
+    </li>
+    <li>
+      <a id="dockItem3" class="openWindow" data-id="2"><img src="icons/32WVPC.png" alt="Web Virtual PC"/></a>
+    </li>
+    <li>
+      <a id="dockItem4" class="openWindow" data-id="3"><img src="icons/Notepad.png" alt="Notepad"/></a>
+    </li>
+    <li>
+      <a id="dockItem5" class="openWindow" data-id="4"><img src="icons/HTMLComments.png" alt="Comments"/></a>
+    </li>
+   <li>
+      <a id="dockItem6" class="openWindow" data-id="5"><img src="icons/Chatango.png" alt="Chatango"/></a>
+    </li>
+ <li>
+      <a id="dockItem7" class="openWindow" data-id="6"><img src="icons/32Control.png" alt="Control Panel"/></a>
+    </li>
+    <div class="vcrEls" style="display: none;">
+     <li>
+      <a id="dockItem8" class="openWindow"><img src="blank.png" alt="None"/></a>
+    </li>
+    <li>
+      <a id="dockItem9" class="openWindow"><img src="blank.png" alt="None"/></a>
+    </li>
+    <li>
+      <a id="dockItem10" class="openWindow"><img src="blank.png" alt="None"/></a>
+    </li>
+    <li>
+      <a id="dockItem11" class="openWindow"><img src="blank.png" alt="None"/></a>
+    </li>
+    <li>
+      <a id="dockItem12" class="openWindow"><img src="blank.png" alt="None"/></a>
+    </li>
+    </div>
+  </ul>
+</div>
+<!--<div id='audio'></div>
+        <script type='text/javascript'>
+            $(document).ready(function (){
+                $("#audio").stop("true").delay('15000').queue(function() { 
+                    $(this).html('<audio autoplay><source src="http://www.geocities.ws/ethanf44/files/Audio/rimet-startup.mp3" type="audio/mp3" /></audio>');
+                });
+            });
+            </script>-->
+<audio id="jingle" autoplay style="display: none;">
+<source src="http://www.geocities.ws/ethanf44/files/Audio/rimet-startup.mp3" type="audio/mp3">
+</audio>	
+</desktop>
+</body>
+</html>

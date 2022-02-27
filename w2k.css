@@ -1,0 +1,284 @@
+.taskbarPanel, .button, .contents, .themeSelect-content, #window0 > .wincontent, #window6 > .wincontentt {
+    background-color: #d4d0c8 !important;
+    box-shadow: inset -1px -1px #404040, inset 1px 1px #fff, inset -2px -2px rgb(128, 128, 128) !important;;
+}
+/*
+    box-shadow: inset -1px -1px #404040, inset 1px 1px silver, inset -2px -2px grey, inset 2px 2px #fff;
+    background: #d4d0c8;
+*/
+#window0 > .wincontent, #window6 > .wincontent {
+        background-color: #d4d0c8 !important;
+    box-shadow: inset -1px -1px #404040, inset 1px 1px #fff, inset -2px -2px grey !important;;
+}
+
+.taskbarPanel.activeTab, .button:active {
+    background: #d4d0c8;
+    box-shadow: inset 1px 1px #404040, inset -1px -1px #fff, inset -1px -1px #fff, inset 2px 2px grey !important;;
+}
+
+.contents {
+    box-shadow: inset -1px -1px #404040, inset 1px 1px silver, inset -2px -2px grey, inset 2px 2px #fff !important;
+}
+
+.winclose, .winmaximize, .winminimize {
+        box-shadow: inset -1px -1px #404040, inset 1px 1px #fff, inset -2px -2px grey !important;;
+}
+
+#taskbar {
+        background: #d4d0c8;
+    box-shadow: inset 0px 1px #d4d0c8, inset 0px 2px #fff !important;;
+}
+
+#rimetbtn2, #rimetbtn3 {
+    display: none !important;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray !important;;
+}
+
+
+.winmaximize:active, .winminimize:active {
+    background: #d4d0c8 !important;
+    box-shadow: inset 1px 1px #404040, inset -1px -1px #fff, inset -2px -2px silver, inset 2px 2px gray!important;
+    border-radius: 0px !important;
+    color: #000 !important;
+        height: 14px;
+        left: -2px !important;
+    top: 0px !important;
+}
+
+.windowHeader > strong , .windowHeader, #window0 > .wincontent, .taskbarPanel, .contents, #icons, .rimetPossible, .sysinfo-title {
+    font-family: Tahoma !important;
+    font-size: 11px;
+}
+
+.wplist > strong, .themeSelect-content > strong {
+  font-family: "Pixelated MS Sans Serif Bold", "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial !important;
+}
+.windowHeader > strong {
+    left: 4px;
+    top: -2px !important;
+}
+
+.winmaximize:active > span {
+    top: 3px !important;
+    left: 4px !important;
+}
+
+.winminimize:active > span {
+    top: 6px !important;
+    left: 5px !important;
+}
+
+.winclose:active {
+    background-color: #d4d0c8 !important;
+    box-shadow: inset 1px 1px #404040, inset -1px -1px #fff, inset -2px -2px silver, inset 2px 2px gray!important;
+    border-radius: 0px !important;
+    color: #000 !important;
+    background-repeat: no-repeat;    
+    background-position: 60% 55% !important;
+        height: 14px !important;
+}
+
+#txt {
+    right: 2px !important;
+    bottom: -4px !important;
+}
+
+
+.dropbtn {
+    background-image: url(start2k.PNG) !important;
+    width: 55px;
+height: 22px;
+    top: -5px;
+    left: 2.5px;
+}
+
+.taskbarPanel {
+    left: 59px;
+    bottom: -0.5px;
+}
+
+    .dropbtn > img {
+       display: none;
+    }
+
+.windowHeader > span {
+    border: 0px solid #000;
+    margin-left: 0px;
+    font-size: 28px;
+    padding: 0px 0px;
+    line-height: 28px;
+        left: -2px;
+    top: 0px;
+    width: 16px;
+    height: 14px;
+    background-color: #d4d0c8 !important;
+}
+
+.winclose {
+    float: right;
+    left: 0px !important;
+    top: 0px;
+}
+
+.window {
+    position: absolute;
+    border: none;
+    box-shadow: inset -1px -1px #404040, inset 1px 1px silver, inset -2px -2px grey, inset 2px 2px #fff !important;
+    background: #d4d0c8 !important;
+}
+
+.menu {
+    box-shadow: inset -1px -1px #404040, inset 1px 1px silver, inset -2px -2px grey, inset 2px 2px #fff !important;
+    background: #d4d0c8 !important;
+}
+
+.menu-option {
+  font-family: Tahoma !important;        
+}
+
+.windowHeader {
+    background: linear-gradient(90deg,#0a246a,#a6caf0);;
+    color: #FFF;
+    box-shadow: none !important;
+    text-align: right;
+    border-bottom: 0px solid #000;
+    padding: 2px;
+    cursor: move;
+    margin: 4px;
+    height: 14px;
+}
+
+.winmaximize > span {
+    border: 1px solid #000;
+    border-top: 2px solid #000;
+    top: 2px !important;
+    left: 3px !important;
+    height: 6px !important;
+    width: 7px !important;
+}
+
+.winminimize > span {
+    border-bottom: 2px solid #000;
+        top: 5px !important;
+    left: 4px !important;
+    height: 4px !important;
+    width: 6px !important;
+}
+
+#chiclose {
+    display: none;
+}
+
+#window0 > .windowHeader > strong {
+    left: 8px;
+    top: -1px;
+}
+
+#window0 > .wincontent, #window6 > .wincontent {
+    background-color: #c0c0c000 !important;
+    box-shadow: none !important;
+}
+
+#themePreview > #window0 > .wincontent {
+       border: none;
+    box-shadow: inset -1px -1px #404040, inset 1px 1px silver, inset -2px -2px grey, inset 2px 2px #fff !important;
+}
+
+#comments {
+    right: 60px;
+        top: 6.5px !important; 
+}
+#window0 > .windowHeader > #comments, #window6 > .windowHeader > #comments {
+    right: 45px;
+        top: 7px !important; 
+}
+
+.windowHeader > strong {
+    left: 4px;
+    top: -1px;
+}
+
+#comments {
+    right: 60px;
+        top: 7px !important; 
+}
+
+#window0 > .windowHeader > #comments, #window6 > .windowHeader > #comments {
+    right: 45px;
+        top: 7px !important; 
+}
+
+menu[role=tablist] button, menu[role=tablist] button[aria-selected=true], .audioplayer-playing .audioplayer-playpause {
+            background: #d4d0c8;
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+    box-shadow: inset -1px -1px #404040, inset 1px 1px #fff, inset -2px -2px rgb(128, 128, 128) !important;;
+            background: #d4d0c8;
+}
+.winclose {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMEgxSDJWMUgzVjJINEg1VjFINlYwSDdIOFYxSDdWMkg2VjNINVY0SDZWNUg3VjZIOFY3SDdINlY2SDVWNUg0SDNWNkgyVjdIMUgwVjZIMVY1SDJWNEgzVjNIMlYySDFWMUgwVjBaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") !important;
+    background-repeat: no-repeat;    
+    background-position: 45% 45% !important;
+}
+
+[role=tabpanel] {
+    box-shadow: inset 1px 1px #fff, inset 2px 2px #dfdfdf00, inset -1px -1px #404040, inset -2px -2px grey !important;
+        background: #d4d0c8;
+}
+
+menu[role=tablist] button {
+    box-shadow: inset 1px 1px #fff, inset 2px 2px #dfdfdf00, inset -1px 0 #404040, inset -2px 0 #7f7f7f !important;
+}
+
+body {
+    background-color: rgb(58, 110, 165);
+}
+
+desktop {
+  background: none;
+}
+
+.line-separator, hr {
+    box-shadow: inset 0px 1px grey, inset -1px -1px #fff, inset 2px 2px silver, inset -2px -2px #dfdfdf;
+}
+
+.line-separator {
+    box-shadow: inset 1px 1px gray, inset -1px -1px #fff, inset 2px 2px silver, inset -2px -2px #dfdfdf !important;
+}
+
+hr {
+    border-top: 1px solid #80808000 !important;
+    height: 2px;
+}
+
+.dropup-content a:hover {
+  background: rgb(10, 36, 106);
+  color: #FFF;
+  }
+
+.iconText:hover {
+  background: rgb(10, 36, 106);
+  color: #FFF;
+}
+
+.abtRimet {
+    color: #000;
+}
+
+.rimetPossible, .sysinfo-title, .themeSelect-content > strong, .wplist > strong {
+    font-family: Tahoma, "Pixelated MS Sans Serif Bold", "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial !important;
+}
+
+  .theme-credit::after { 
+  content: "Windows Standard Theme by APH6000." !important;
+}
+
+.wplist {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #d4d0c8, inset 2px 2px #404040;
+}

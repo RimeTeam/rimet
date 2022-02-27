@@ -1,0 +1,922 @@
+  /*RIMETPAD*/
+
+
+    .show {display: block;}
+
+#window6 > .windowHeader > .winmaximize {
+ display: none; 
+}
+
+#window6 > .windowHeader > #comments {
+  right: 27px;
+}
+
+#window6 > .wincontent > .ui-resizable-handle {
+  display: none !important;
+}
+
+
+#comments_list {
+  overflow: visible !important;
+}
+
+  .theme-credit::after { 
+  content: "Rimet Default by Ethan F, APH6000." !important;
+}
+
+
+.wincontent {
+ font-family: Microsoft Sans Serif, Tahoma, NanumGothic, sans-serif; 
+}
+
+#comments {
+  font-size: 11px;
+  text-decoration: underline;
+  top: 7.5px !important;
+  float: right;
+  color: white !important;
+  position: absolute;
+}
+
+.winclose {
+  float: left;
+}
+
+.winminimize > span {
+left: 4.2px !important;
+}
+
+.winclose, .winmaximize, .winminimize {
+  background: silver !important;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	border-radius: 0px !important;
+	color: #000;
+	font-weight: bold;
+}
+
+@keyframes moveIt {
+  from {background-position: right;}
+  to {background-position: left;}
+}
+
+body {
+  background-color: aqua;
+}
+
+a, a:hover, a:active, a:visited { color: black; }
+
+desktop {
+	font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+	overflow: hidden;
+	background-image: url('always_teal.png');
+	  animation: moveIt 35s linear infinite;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.window {
+    position: absolute;
+    border: 2px solid #000;
+    background: #FFF;
+	z-index: 1000;
+}
+.window.closed {
+	display: none;
+}
+.window.minimizedWindow {
+	display: none;
+}
+.window.fullSizeWindow {
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    bottom: 32px;
+}
+.fullSizeWindow .ui-resizable-handle {
+	display: none;
+}
+.windowHeader {
+    background: navy;
+	  color: #FFF;
+	  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    text-align: right;
+    border-bottom: 2px solid #000;
+    padding: 2px;
+    cursor: move;
+    height: 28px;
+    font-family: "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+}
+.windowHeader > span {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-left: 4px;
+    font-size: 19px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    line-height: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.window.minimizedWindow {
+	display: none;
+}
+.window.fullSizeWindow {
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    border-radius: 0;
+    bottom: 28px !important;
+}
+.fullSizeWindow .ui-resizable-handle {
+	display: none;
+}
+.windowHeader {
+    text-align: right;
+    border-bottom: 2px solid #000;
+    padding: 2px;
+    cursor: move;
+    height: 22px;
+}
+
+.windowHeader > span {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-left: 0px;
+    font-size: 19px;
+    padding: 2px 10px;
+    font-family: "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+    border-radius: 5px;
+    line-height: 20px;
+    width: 0px;
+    height: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.windowHeader > span:hover {
+	background: rgba(255,255,255,0.3);
+}
+.windowHeader > span.winclose:hover {
+	background: #0000ff;
+}
+.windowHeader > span > span {
+    display: inline-block;
+    height: 8px;
+    width: 10px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+.winminimize > span {
+	border-bottom: 3px solid #000;
+}
+.winmaximize > span {
+	border: 2px solid #000;
+	border-top: 3px solid #000;
+}
+.winmaximize > span:nth-child(2) {
+	display: none;
+}
+.winclose > img {
+position: absolute;
+top: 7px;
+left: 4px;
+}
+.fullSizeWindow .winmaximize > span:nth-child(1) {
+	margin: 0 0 0 0;
+}
+/*.fullSizeWindow .winmaximize > span:nth-child(2) {
+    display: inline-block;
+    top: 3px;
+    left: 12px;
+}*/
+.window.fullSizeWindow > .wincontent {
+    padding: 10px;
+    min-width: 200px;
+    min-height: 140px;
+    /*border: 2px solid #000;*/
+    margin: 2px;
+    /*border-radius: 0 0 5px 5px;*/
+}
+
+.windowHeader > strong {
+    position: absolute;
+    top: -1px;
+    left: 30px;
+    line-height: 29px;
+    font-size: 11px;
+}
+
+.dropbtn {
+bottom: -2px;
+left: -2px;
+padding: 4px;
+position: relative;
+}
+
+.dropbtn2 {
+bottom: 1px;
+left: 27px;
+position: absolute;
+}
+
+.dropbtn3 {
+bottom: 1px;
+left: 50px;
+position: absolute;
+}
+
+.taskbarPanel {
+    display: inline-block;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    border-radius: 0px;
+    line-height: 22px;
+    margin: 3.5px 0 0 2px;
+    font-size: 11px;
+    padding: 0 10px;
+    position: relative;
+    bottom: 1px;
+    left: 77px;
+    font-family: "Microsoft Sans Serif", Tahoma, NanumGothic, Aria;
+	cursor: pointer;
+}
+
+@font-face {
+font-family:"Pixelated MS Sans Serif";
+src:url('ms_sans_serif.woff') format("woff");
+font-weight:400;
+font-style:normal;
+}
+@font-face {
+font-family:"Pixelated MS Sans Serif Bold";
+src:url('ms_sans_serif_bold.woff') format("woff");
+font-weight:700;
+font-style:normal;
+}
+
+.taskbarPanel.activeTab {
+	background: #CCC;
+	font-weight: bold;
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+}
+.taskbarPanel.minimizedTab {
+ background: #CCC;
+}
+.taskbarPanel.minimizedTab:hover {
+	background: #E5E5E5;
+}
+.taskbarPanel.closed {
+	display: none;
+}
+#taskbar {
+	position: absolute;
+	height: 28px;
+	bottom: 0 !important;
+	left: 0;
+	right: 0;
+background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	border-radius: 0px;
+	color: #000;
+}
+#icons {
+	position: absolute;
+	z-index: 0;
+	top: 20px;
+	left: 20px;
+}
+#icons a {
+    display: block;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+
+ .winclose, .winmaximize, .winminimize {
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey;
+    border-radius: 0px;
+    color: #000 !important;
+    font-weight: bold;
+        height: 18px;
+}
+
+.winminimize > span {
+    border-bottom: 2px solid #000;
+        top: 8px !important;
+    left: 3px !important;
+    height: 4px !important;
+    width: 8px !important;
+}
+
+.windowHeader > span {
+    border: 0px solid #000;
+    margin-left: 0px;
+    font-size: 28px;
+    padding: 0px 0px;
+    line-height: 28px;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.winclose {   
+    left: -2px;
+    top: -2px;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 50% !important;
+}
+
+.winmaximize, .winminimize {
+        top: -2px;
+        left: 2px;
+}
+
+.windowHeader {
+    background: navy;
+    color: #FFF;
+    box-shadow: none !important;
+    text-align: right;
+    border-bottom: 0px solid #000;
+    padding: 2px;
+    cursor: move;
+    margin: 2.5px;
+    height: 14px;
+}
+
+.window {
+    position: absolute;
+    border: 1px solid gray;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+}
+
+.windowHeader > span > span {
+    display: inline-block;
+    height: 8px;
+    width: 14px;
+    position: absolute;
+    top: 11px;
+    left: 3px;
+}
+
+#comments {
+    right: 45px;
+    top: 6px !important;
+}
+
+.windowHeader > strong {
+    left: 22px;
+    top: -3px;
+}
+
+#window6 > .windowHeader > strong {
+    left: 24px;
+}
+
+.winmaximize > span {
+    border: 1px solid #000;
+    border-top: 2px solid #000;
+    top: 3px !important;
+    left: 3px !important;
+    height: 8px !important;
+    width: 9px !important;
+}
+
+
+.winclose > img {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+#icons {
+  display: none !important;
+}
+
+#txt {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey!important;
+    padding: 5px;
+    bottom: -3px !important;
+}
+
+a#themeButton.button, #reset > .button {
+  font-size: 11px;
+  padding: 6px 28px 6px 28px !important;
+}
+
+.taskbarPanel, #taskbar, .button, .contents, .themeSelect-content, #window6 > .wincontent, #window6 > .wincontentt {
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+}
+
+.wincontent {
+  padding: 0 4px 4px 4px;
+}
+
+.taskbarPanel {
+ padding-left: 24px; 
+}
+
+.windowHeader > strong {
+ padding-left: 24px; 
+}
+
+#window6 > .windowHeader > strong {
+ padding-left: 0; 
+}
+
+#minimPanel0, #minimPanel0 > .taskbarPanel.activeTab {
+ background-image: none !important;
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+padding: 0 10px !important; 
+}
+
+#minimPanel1, #minimPanel1 > .taskbarPanel.activeTab, #window1 > .windowHeader > strong {
+ background-image: url(icons/Inter.png);
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel2, #minimPanel2 > .taskbarPanel.activeTab, #window2 > .windowHeader > strong {
+ background-image: url(icons/WVPC.png);
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel3, #minimPanel3 > .taskbarPanel.activeTab, #window3 > .windowHeader > strong {
+ background-image: url(icons/Notepad.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel4, #minimPanel4 > .taskbarPanel.activeTab, #window4 > .windowHeader > strong {
+ background-image: url(icons/HTMLComments.png);
+  background-position: 5% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel5, #minimPanel5 > .taskbarPanel.activeTab, #window5 > .windowHeader > strong {
+ background-image: url(icons/Chatango.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel6, #minimPanel6 > .taskbarPanel.activeTab, #window6 > .windowHeader > strong {
+ background-image: url(icons/Control_Panel.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+.taskbarPanel.minimizedTab:hover {
+    font-weight: normal;
+    background: #CCC;
+}
+
+.line-separator, hr {
+    box-shadow: inset 0px 1px gray, inset -1px -1px #fff, inset 2px 2px silver, inset -2px -2px #dfdfdf;
+}
+
+.taskbarPanel.activeTab, .button:hover {
+    font-weight: normal !important;
+    background-color: #CCC;
+}
+
+/*Code that fixes text*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+h1 {font-size: 1.5em;margin-bottom: 10px;}
+p{font-size: 1em;line-height: 1.3em;margin-bottom: 10px;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+
+
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+
+/*ALL PREVIOUSLY IN-LINE CSS BECAUSE THAT CODE IS REALLY MESSY AND I'M TRYING TO FIX IT*/
+
+/*                                                           
+        CCCCCCCCCCCCC   SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS 
+     CCC::::::::::::C SS:::::::::::::::S SS:::::::::::::::S
+   CC:::::::::::::::CS:::::SSSSSS::::::SS:::::SSSSSS::::::S
+  C:::::CCCCCCCC::::CS:::::S     SSSSSSSS:::::S     SSSSSSS
+ C:::::C       CCCCCCS:::::S            S:::::S            
+C:::::C              S:::::S            S:::::S            
+C:::::C               S::::SSSS          S::::SSSS         
+C:::::C                SS::::::SSSSS      SS::::::SSSSS    
+C:::::C                  SSS::::::::SS      SSS::::::::SS  
+C:::::C                     SSSSSS::::S        SSSSSS::::S 
+C:::::C                          S:::::S            S:::::S
+ C:::::C       CCCCCC            S:::::S            S:::::S
+  C:::::CCCCCCCC::::CSSSSSSS     S:::::SSSSSSSS     S:::::S
+   CC:::::::::::::::CS::::::SSSSSS:::::SS::::::SSSSSS:::::S
+     CCC::::::::::::CS:::::::::::::::SS S:::::::::::::::SS 
+        CCCCCCCCCCCCC SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS   
+
+*/
+
+*, span, .wincontent, -webkit-scrollbar-thumb:hover {cursor: url(http://www.geocities.ws/ethanf44/misc/cursor1.cur),auto !important;}
+a:hover, a {cursor: url(http://www.geocities.ws/ethanf44/misc/cursor1.cur),auto !important;}
+
+#window6 > .wincontent {
+  scrollbar-width: none;
+}
+
+#window6 > .wincontent::-webkit-scrollbar {
+  display: none;
+}
+
+#userPFP {
+  border-radius: 0px;
+border: 2px solid #000;
+}
+
+.abtRimet {
+ float: left;
+ margin-left: 42px;
+ font-size: 11px;
+ line-height: 1.5;
+}
+
+#window6 > .wincontent, #window6 > .wincontent {
+  overflow: hidden;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+#window6 > .wincontent {
+  overflow-y: scroll;
+}
+
+.dropbtn {
+  background: none;
+  color: white;
+  width: 23px;
+  height: 22px;
+  bottom: 4px;
+  left: 0px;
+  border: none;
+}
+.dropup {
+  position: absolute;
+  bottom: -3px !important;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+}
+
+#iconDesktop {
+  position: absolute;
+}
+
+.contents {
+  color: black;  
+  position: absolute;
+background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	font-family: "Microsoft Sans Serif", "MS Sans Serif" , "Tahoma";
+	font-size: 11px;
+  width: 170px;
+  bottom: 28px;
+  left: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  z-index: 1;
+}
+
+#icons {
+  color: #FFF;  
+	font-family: "MS Sans Serif", "Tahoma";
+		background: none !important;
+	font-size: 10px;
+}
+* {	
+	-webkit-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-ms-user-select: none;
+}
+
+
+.iconText {
+  /*padding-left: 4px;
+  padding-right: 5px;*/
+  margin-top: -5px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.iconText:hover {
+ 	background: rgb(0, 0, 128);
+	color: #FFF;
+}
+
+.desktopIcon:hover {
+  cursor: pointer;
+}
+
+/*.desktopIcon > img {
+    margin: 0px 0px -6px 4px;
+}*/
+.rLogo {
+ height:240px;
+ width:30px;
+ bottom:35px;
+ z-index: 1;
+ font-family:'Trebuchet MS'; 
+ font-weight: bold;
+}
+
+
+/*.startItems {
+  padding-left:30px;
+}*/
+
+
+.dropup-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {
+  background: #000080;
+  color: #FFF;
+  }
+
+/*.rLogo {
+   background: url(rimet.png);
+   background-color: navy;
+  color: #FFF !important;
+  float:left;
+  }*/
+
+/*.dropup:hover .dropup-content {
+  display: block;
+  text-shadow: none !important;
+}*/
+
+.show {display: block;}
+.startOpened {display: block;}
+
+@font-face {
+  font-family: "FGMCondensed";
+  src: url("condensed.ttf");
+}
+@font-face {
+  font-family: "MS Sans Serif Pixel";
+  src: url("ms_sans_serif.woff");
+}
+
+body, #about {
+  overflow: hidden;
+}
+
+iframe, embed {
+  overflow: scroll;
+}
+
+.line-separator{
+height: 2px;
+margin:5px;
+box-shadow: inset 1px 1px #545454, inset -1px -1px #fff, inset 2px 2px silver, inset -2px -2px #dfdfdf !important;
+background: silver;
+}
+
+#txt {
+  position: relative;
+  bottom: -8px;
+  right: 10px;
+  float: right;
+  font-family: "MS Sans Serif", Microsoft Sans Serif, Segoe UI, Roboto, Fazu Sans, Helvetica, Arial; 
+  font-size: 11px;
+ font-weight: normal;
+}
+
+#interTop {
+ margin-top: 6px !important; 
+ margin-left: 3px !important;
+}
+#window1 > .wincontent {
+  padding: 2px;
+  border: none !important;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent > #Inter {
+  height: 99% !important;
+  width: 100% !important;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent > #interTop > #interBar > #addressbar {
+  width: 90% !important;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent > #interTop {
+  margin-top: -4px !important;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent {
+  padding: 10px !important;
+  border: none !important;
+  }
+  
+  
+#cpl {
+    font-family: Microsoft Sans Serif, MS Sans Serif, Tahoma, NanumGothic, Jomolhari, Times New Roman, sans-serif;
+}
+.button {
+   background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	font-family: Microsoft Sans Serif, MS Sans Serif, Tahoma, NanumGothic, Jomolhari, Times New Roman, sans-serif;
+  padding: 10px;
+  display: inline-block;
+}
+.button:active {
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+}
+
+#cpl a {
+  color: #000;
+  text-decoration: none;
+}
+
+#reset a:hover {
+  font-style: normal;
+}
+
+.empty {
+ height: 1000px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.themeSelect-content {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  min-width: 240px;
+  z-index: 1;
+  height: 70px !important;
+overflow-y: scroll !important;
+overflow-x: visible;
+}
+
+.themeSelect-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+.themeSelect-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .themeSelect-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#icon1 > .desktopIcon > .iconText {
+    margin-left: -1px;
+}
+			
+			#icon2 > .desktopIcon > .iconText {
+    margin-left: -3px;
+}
+
+#okButton, #okButton:hover {
+      padding: 3px 28px 3px 28px !important;
+      display: none !important;
+    position: absolute;
+    bottom: 13px !important;
+    right: 15px !important;
+}
+
+#langBtn0, #langBtn0:hover {
+      padding: 3px 28px 3px 28px !important;
+      display: none !important;
+    position: absolute;
+    bottom: 13px !important;
+    left: 15px !important;
+}
+
+#langBtn1, #langBtn1:hover {
+      padding: 3px 28px 3px 28px !important;
+      display: none !important;
+    position: absolute;
+    bottom: 13px !important;
+    left: 120px !important;
+}
+  
+  #langButton {
+     padding: 6px 28px 6px 28px !important;
+     display: none !important;
+     font-size: 11px;
+  }
+  
+#interBar {
+ margin-left: 25px;
+}
+#addressbar {
+ width: 84%; 
+ float: left;
+ position: relative;
+}
+#interHome, #interBack, #interForward {
+ position: relative;
+ float: left;
+ left: 0px;
+ margin: 2px;
+ margin-top: 1px;
+}
+#interForward {
+  margin-right: 5px !important;
+}
+#interHome > img, #interBack > img, #interForward > img {
+   width: 20px;
+}
+  
+  #taskbar {
+    width: 120px !important;
+    height: 100% !important;
+  }
+  .taskbarPanel, #minimPanel0 {
+    width: 75px !important;
+    display: inline-block !important;
+    padding: 4px 20px !important;
+    background-image: none !important;
+    text-align: center !important;
+    left: 0.1px !important;
+  } 
+  #txt, .dropbtn, .dropbtn2, .dropbtn3 {
+    display: none !important;
+  }
+  .window {
+    display: inline-block !important;
+    left: 120px !important;
+    top: 0px !important;
+    width: 88.2% !important;
+    height: 99.8% !important;
+  }
+  .wincontent {
+    top: 2px !important;
+    left: -2px !important;
+    width: 99.3% !important;
+    height: 99.2% !important;
+  }
+  .windowHeader {
+    display: none !important;
+  }
+  .contents {
+    display: none !important;
+  }
+  }
+
+
+
+
+@media only screen and (max-width:320px) {
+  /* For mobile phones: */
+  .window {
+    width: 61.5% !important;
+    overflow: hidden !important;
+    top: 0px !important;
+  }
+}
+
+
+

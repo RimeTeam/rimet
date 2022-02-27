@@ -1,0 +1,128 @@
+<style>
+body {
+ background: transparent !important;
+}
+
+h1, h2, h3, h4, h5, p {
+ color: #FFF !important; 
+}
+
+
+#bar {
+margin: 0 auto;
+width: 250px;height: 10px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;height: 100%;
+background: lightblue;
+} 
+
+body { font-family: Trebuchet MS, "Arial", sans-serif; }
+
+#wrap { text-align: center; }
+
+#bar {
+margin: 0 auto;
+width: 250px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;
+background: lightblue;
+}
+
+body {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.button {
+  background: silver !important;
+  text-decoration: none;
+  font-style:normal;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf !important;
+	font-family: Trebuchet MS;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.button:hover {
+  background: aqua !important;
+  text-decoration: none;
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf !important;
+	font-family: Trebuchet MS;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.tnr {
+  font-family: Times !important;
+  font-size: 4vw;
+  padding: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  color: white;
+}
+body {
+background: #FFF;
+color: #000;
+}
+
+h1, h3, h5 { 
+  font-style: normal !important;
+}
+
+html {
+  height: 100%;
+}
+</style>
+<title>Rimet Setup</title>
+<script>
+
+var time = 2000; // 10 secs
+var steps = 50; // Five per second
+var step = 1;
+
+function progress() {
+var bar = document.getElementById( "bar");
+var aStep = (bar.offsetWidth -2) /steps;// 2px border removed from width
+var x = Math.round( aStep *step);
+var progress = document.getElementById( "progress");
+
+progress.style.width = x +"px";
+step++;
+
+if( step > steps) redir();
+else setTimeout( "progress();", time /steps);
+}
+
+function redir() {
+location.replace( "installing.html");
+}
+
+</script>
+
+<div id='wrap'>
+<p>&nbsp;</p>
+<h1> Formatting Wizard </h1>
+<div id='bar'><div id='progress'></div></div>
+<br>
+<h3>*This will erase <i>ALL</i> your data.<br>Be sure to make a backup.</h3>
+<div class="button"><a href='#' onClick='progress();'>Begin Formatting</a> </div>
+<div class="button"><a href="next.html">Previous</a></div>
+<h5>*Not really.</h5>
+
+</div>

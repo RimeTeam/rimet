@@ -1,0 +1,7 @@
+#taskbar, #icons, #window0 > .windowHeader > .winclose {
+display: inline-block !important;
+  }
+  
+  #window0, #minimPanel0 {
+    display: none !important;
+  }

@@ -1,0 +1,6 @@
+/* CSS exclusive to Rimet Default */
+/* Most stuff in style.css applies to other themes so this is used so they don't break */
+
+.rimetPossible, .sysinfo-title, .themeSelect-content > strong, .wplist > strong {
+font-family: "Pixelated MS Sans Serif Bold", "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+}
