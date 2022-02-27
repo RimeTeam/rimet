@@ -1,1 +1,0 @@
-$("#list").append('I tried');
