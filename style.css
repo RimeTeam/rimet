@@ -1,0 +1,1483 @@
+/*Hello world!*/
+ #window10 > .windowHeader > .winclose {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+   /*
+    #interTabs [role="tabpanel"] (max-width: 330px) {
+  #tab-4, #tab-5, #tab-6 {
+  display: none !important;
+  }
+}
+   */
+
+
+#interTabs [role="tabpanel"] {
+    height: calc(100% - 50px) !important;
+}
+
+#window9 > .windowHeader > .winmaximize, #window9 > .windowHeader > .winminimize, #window9 > .windowHeader > #comments {
+  display: none;
+}
+
+#window11 > .windowHeader > .winmaximize, #window11 > .windowHeader > #comments {
+  display: none;
+}
+
+#minimPanel9, #minimPanel10 {
+  display: none;
+}
+
+#icons.pmIcns {
+  color: #000 !important;
+}
+
+@font-face {
+font-family:"Pixelated MS Sans Serif";
+src:url('mssansserif.woff') format("woff");
+font-weight:400;
+font-style:normal;
+}
+@font-face {
+font-family:"Pixelated MS Sans Serif Bold";
+src:url('mssansserifbold.woff') format("woff");
+font-weight:700;
+font-style:normal;
+}
+
+@font-face {
+  font-family: "FGMCondensed";
+  src: url("condensed.ttf");
+}
+@font-face {
+  font-family: "MS Sans Serif Pixel";
+  src: url("ms_sans_serif.woff");
+}
+
+.header {
+  display:none;
+}
+
+.wallChooser {
+   width: 75px;
+    overflow:hidden;
+    color: transparent;
+    position: absolute;
+right: 10px;
+bottom: 135px;
+}
+
+
+#RimetOverlay {
+  background-image: url('rimet-startup.png');
+  -webkit-animation: seconds 0.1s forwards;
+  -webkit-animation-iteration-count: 1;
+  z-index: 999998;
+  -webkit-animation-delay: 15s;
+  animation: seconds 0.1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 15s;
+  position: absolute;
+  font-family: MSDOS, 'Trebuchet MS', Helvetica, Arial;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+  padding: 10px !important;
+  color: #FFF;
+}
+
+@font-face {
+  font-family: MSDOS;
+  src: url(Perfect%20DOS%20VGA%20437.woff);
+}
+
+ body {
+  overflow: hidden;
+}
+
+#bar {
+margin: 0 auto;
+width: 250px;height: 10px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;height: 100%;
+background: url('ad40-pdb.png');
+} 
+
+#wrap { 
+  text-align: center; 
+  }
+
+#bar {
+margin: 0 auto;
+width: 250px;
+text-align: left;
+border: 1px solid white;
+}
+
+#skip {
+position: fixed !important;
+background: lime;
+color: #000;
+font-family: MSDOS, Trebuchet MS, Tahoma !important;
+font-size: 15px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 8px;
+padding-right: 8px;
+z-index: 999999;
+top: 10px !important;
+left: 10px !important;
+}
+
+#skip:hover {
+background: green;
+color: #000;
+}
+
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none !important;
+   max-height: 0px !important;
+   z-index: -350 !important;
+    max-width: 0px !important;
+    visibility: none !important;
+    left: -100% !important;
+  }
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none !important;
+    max-height: 0px !important;
+    z-index: -350 !important;
+    max-width: 0px !important;
+    visibility: none !important;
+    left: -100% !important;
+  }
+}
+
+#random { 
+    display: inline-block; 
+    position: absolute;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  color: #FFF;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+#window7 > .windowHeader > #comments {
+  display: none !important;
+}
+
+ desktop > .audioplayer {
+ display: none !important;
+  }
+  
+.windowHeader > strong {
+      font-family: "Pixelated MS Sans Serif Bold", "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+}
+
+[role="tabpanel"] {
+    height: 355px !important;
+}
+
+.tabs {
+  margin-top: -20px;
+}
+
+.window {
+  padding: 0px !important;
+}
+
+ .dock {
+    display: none;
+    bottom: 0 !important;
+    position: absolute !important;
+    left: 50% !important;
+    height: 100px !important;
+    width: 800px !important;
+    margin-right: -200px !important;
+    transform: translate(-50%, -0%);
+  }
+  
+  .dock ul {
+  display: inline-block;
+  float: left;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-right: 40px;
+}
+.dock ul li {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  bottom: 0;
+  vertical-align: bottom;
+  margin-top: -43px;
+}
+.dock ul li a {
+  display: block;
+  height: 135px;
+  margin-bottom: 10px;
+  width: 100px;
+  position: relative;
+  -webkit-transition-property: width, height, margin-top;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-property: width, height, margin-top;
+  -o-transition-duration: 0.5s;
+  -moz-transition-property: width, height, margin-top;
+  -moz-transition-duration: 0.5s;
+}
+.dock ul li a:hover {
+  /*width: 150px;
+  height: 150px;
+  margin-top: -50px;*/
+  opacity: 0.5;
+}
+.dock ul li a img {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  padding: 0px 0px 0px 30px;
+}
+
+#contents {
+z-index: 5 !important;
+}
+   .show {
+	   display: inline-block;
+	   }
+
+#window0 > .windowHeader > .winmaximize, #window7 > .windowHeader > .winmaximize {
+ display: none; 
+}
+
+#window0 > .wincontent > .ui-resizable-handle, #window6 > .wincontent > .ui-resizable-handle, #window7 > .wincontent > .ui-resizable-handle, #window8 > .wincontent > .ui-resizable-handle {
+ display: none !important; 
+}
+
+#window0 > .windowHeader > #comments {
+  right: 27px;
+}
+
+#comments_list {
+  overflow: visible !important;
+}
+
+  .theme-credit::after { 
+  content: "Rimet Default by Ethan F, APH6000." !important;
+}
+
+
+.wincontent, .rBasedOn, #txt, .taskbarPanel, .contents, .iconDesktop, .button, h1, h2, h3 {
+  font-family: "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif Bold", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+}
+
+.rBasedOn {
+ background: #000 !important;
+ color: #FFF !important;
+}
+
+.rBasedOn a {
+  color: #FFF !important;
+}
+
+#comments {
+  font-size: 11px;
+  text-decoration: underline;
+  top: 7.5px !important;
+  float: right;
+  color: white !important;
+  position: absolute;
+}
+
+.winclose {
+  float: left;
+}
+
+.winminimize > span {
+left: 4.2px !important;
+}
+
+.winclose, .winmaximize, .winminimize {
+  background: silver !important;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	border-radius: 0px !important;
+	color: #000;
+	font-weight: bold;
+}
+
+@keyframes moveIt {
+  from {background-position: right;}
+  to {background-position: left;}
+}
+
+body {
+  background-color: teal;
+  width: 0px;
+  height: 0px;
+}
+
+a, a:hover, a:active, a:visited { color: black; }
+
+#themePreview {
+  	background-image: url('always_teal.png');
+	  animation: none !important;
+	  width: 354px;
+	  height: 222px;
+	  box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+}
+
+#themePreview > #window0 {
+  top: 10px;
+  position: relative;
+  display: inline !important;
+  left: -30px;
+}
+
+#themePreview > #window0 > .wincontent {
+  width: 220px;
+  height: 148px;
+  overflow: hidden !important;
+}
+
+#themePreview > #window0 > .wincontent > .winTxt {
+padding-top: 25px;
+}
+
+#themePreview > #window0 > .windowHeader {
+  width: 220px;
+  top: 23px;
+  position: relative;
+  z-index: 40000;
+}
+
+#themePreview > #window0 > .windowHeader > strong {
+  left: 5px;
+  top: -6px;
+  text-align: left;
+}
+
+desktop {
+	font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+	overflow: hidden;
+	object-fit: cover;
+	background-image: url('always_teal.png');
+	  animation: moveIt 35s linear infinite;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.window {
+    position: absolute;
+    border: 2px solid #000;
+    background: #FFF;
+}
+.window.closed {
+	display: none;
+}
+.window.minimizedWindow {
+	display: none;
+}
+.window.fullSizeWindow {
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    bottom: 32px;
+}
+.fullSizeWindow .ui-resizable-handle {
+	display: none;
+}
+.windowHeader {
+    background: navy;
+	  color: #FFF;
+	  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    text-align: right;
+    border-bottom: 2px solid #000;
+    padding: 2px;
+    cursor: move;
+    height: 28px;
+}
+
+.windowHeader, #window0 > .wincontent {
+    font-family: "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+}
+.windowHeader > span {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-left: 4px;
+    font-size: 19px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    line-height: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.window.minimizedWindow {
+	display: none;
+}
+.window.fullSizeWindow {
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    border-radius: 0;
+    bottom: 28px !important;
+}
+.fullSizeWindow .ui-resizable-handle {
+	display: none;
+}
+.windowHeader {
+    text-align: right;
+    border-bottom: 2px solid #000;
+    padding: 2px;
+    cursor: move;
+    height: 22px;
+}
+
+.windowHeader > span {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-left: 0px;
+    font-size: 19px;
+    padding: 2px 10px;
+    font-family: "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+    border-radius: 5px;
+    line-height: 20px;
+    width: 0px;
+    height: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.windowHeader > span:hover {
+	background: rgba(255,255,255,0.3);
+}
+.windowHeader > span.winclose:hover {
+	background: #0000ff;
+}
+.windowHeader > span > span {
+    display: inline-block;
+    height: 8px;
+    width: 10px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+.winminimize > span {
+	border-bottom: 3px solid #000;
+}
+.winmaximize > span {
+	border: 2px solid #000;
+	border-top: 3px solid #000;
+}
+.winmaximize > span:nth-child(2) {
+	display: none;
+}
+.winclose > img {
+position: absolute;
+top: 7px;
+left: 4px;
+}
+.fullSizeWindow .winmaximize > span:nth-child(1) {
+	margin: 0 0 0 0;
+}
+
+/*.window.fullSizeWindow > .wincontent {
+    padding: 10px;
+    min-width: 200px;
+    min-height: 140px;
+    /*border: 2px solid #000;
+    margin: 2px;
+    /*border-radius: 0 0 5px 5px;*/
+/*}*/
+
+.windowHeader > strong {
+    position: absolute;
+    top: -1px;
+    left: 30px;
+    line-height: 29px;
+    font-size: 11px;
+}
+
+.dropbtn {
+bottom: -2px;
+left: -2px;
+padding: 4px;
+position: relative;
+}
+
+.dropbtn2 {
+bottom: 4px;
+left: 27px;
+position: absolute;
+}
+
+.dropbtn3 {
+bottom: 4px;
+left: 50px;
+position: absolute;
+}
+
+.taskbarPanel {
+    display: inline-block;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    border-radius: 0px;
+    line-height: 22px;
+    margin: 3.5px 0 0 2px;
+    font-size: 11px;
+    padding: 0 10px;
+    position: relative;
+    bottom: 1px;
+    left: 77px;
+    font-family: "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+	cursor: pointer;
+}
+
+.taskbarPanel.activeTab {
+	background: #CCC;
+	font-weight: bold;
+	    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #0a0a0a;
+}
+.taskbarPanel.minimizedTab {
+ background: #CCC;
+}
+.taskbarPanel.minimizedTab:hover {
+	background: #E5E5E5;
+}
+.taskbarPanel.closed {
+	display: none;
+}
+#taskbar {
+	position: absolute;
+	height: 28px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+background: silver;
+    box-shadow: inset 0px 1px silver, inset 0px 2px #fff;
+	border-radius: 0px;
+	color: #000;
+}
+#icons {
+	position: absolute;
+	z-index: 0;
+	top: 20px;
+	left: 20px;
+}
+#icons a {
+    display: block;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+
+ .winclose, .winmaximize, .winminimize {
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey;
+    border-radius: 0px;
+    color: #000 !important;
+    font-weight: bold;
+        height: 18px;
+}
+
+.winminimize > span {
+    border-bottom: 2px solid #000;
+        top: 8px !important;
+    left: 3px !important;
+    height: 4px !important;
+    width: 8px !important;
+}
+
+.windowHeader > span {
+    border: 0px solid #000;
+    margin-left: 0px;
+    font-size: 28px;
+    padding: 0px 0px;
+    line-height: 28px;
+    width: 18px;
+    height: 18px;
+}
+
+.winclose {   
+    left: -2px;
+    top: -2px;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 50% !important;
+}
+
+.winmaximize, .winminimize {
+        top: -2px;
+        left: 2px;
+}
+
+.windowHeader {
+    background: navy;
+    color: #FFF;
+    box-shadow: none !important;
+    
+    text-align: right;
+    border-bottom: 0px solid #000;
+    padding: 2px;
+    cursor: move;
+    margin: 2.5px;
+    height: 14px;
+}
+
+.window {
+    position: absolute;
+    border: 1px solid gray;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+}
+
+.windowHeader > span > span {
+    display: inline-block;
+    height: 8px;
+    width: 14px;
+    position: absolute;
+    top: 11px;
+    left: 3px;
+}
+
+#comments {
+    right: 45px;
+    top: 6px !important;
+}
+
+.windowHeader > strong {
+    left: 22px;
+    top: -3px;
+}
+
+#window0 > .windowHeader > strong {
+    left: 24px;
+}
+
+.winmaximize > span {
+    border: 1px solid #000;
+    border-top: 2px solid #000;
+    top: 3px !important;
+    left: 3px !important;
+    height: 8px !important;
+    width: 9px !important;
+}
+
+
+.winclose > img {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+
+#txt {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey!important;
+    padding: 5px;
+    bottom: -3px !important;
+}
+
+a#themeButton.button, #reset > .button {
+  font-size: 11px;
+  padding: 6px 28px 6px 28px !important;
+}
+
+.taskbarPanel, .button, .contents, .themeSelect-content, #window0 > .wincontent, #window6 > .wincontent, .buttondef {
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+}
+
+.wincontent {
+  padding: 0 4px 4px 4px;
+}
+
+.taskbarPanel {
+ padding-left: 24px; 
+}
+
+.windowHeader > strong {
+ padding-left: 24px; 
+}
+
+#window0 > .windowHeader > strong {
+ padding-left: 0; 
+}
+
+#minimPanel0, #minimPanel0 > .taskbarPanel.activeTab {
+ background-image: none !important;
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+padding: 0 10px !important; 
+}
+
+#minimPanel1, #minimPanel1 > .taskbarPanel.activeTab, #window1 > .windowHeader > strong {
+ background-image: url(icons/Inter.png);
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel2, #minimPanel2 > .taskbarPanel.activeTab, #window2 > .windowHeader > strong {
+ background-image: url(icons/WVPC.png);
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel3, #minimPanel3 > .taskbarPanel.activeTab, #window3 > .windowHeader > strong {
+ background-image: url(icons/Notepad.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel4, #minimPanel4 > .taskbarPanel.activeTab, #window4 > .windowHeader > strong {
+ background-image: url(icons/HTMLComments.png);
+  background-position: 5% 50% !important;
+background-repeat: no-repeat !important;
+
+}
+
+#minimPanel5, #minimPanel5 > .taskbarPanel.activeTab, #window5 > .windowHeader > strong {
+ background-image: url(icons/Chatango.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel6, #minimPanel6 > .taskbarPanel.activeTab, #window6 > .windowHeader > strong {
+ background-image: url(icons/Control_Panel.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel7, #minimPanel7 > .taskbarPanel.activeTab, #window7 > .windowHeader > strong {
+ background-image: url(icons/Rimetunes.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel8, #minimPanel8 > .taskbarPanel.activeTab, #window8 > .windowHeader > strong {
+ background-image: url(icons/digishellogo.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel9, #minimPanel9 > .taskbarPanel.activeTab, #window9 > .windowHeader > strong {
+ background-image: url(icons/16Colors.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel10, #minimPanel10 > .taskbarPanel.activeTab, #window10 > .windowHeader > strong {
+ background-image: url(icons/16ProgMan.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel11, #minimPanel11 > .taskbarPanel.activeTab, #window11 > .windowHeader > strong {
+ background-image: url(icons/16TitanHW.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+#minimPanel12, #minimPanel12 > .taskbarPanel.activeTab, #window12 > .windowHeader > strong {
+ background-image: url(icons/16Typewriter.png);
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+}
+
+.taskbarPanel {
+image-rendering: pixelated !important;  
+}
+
+.taskbarPanel.minimizedTab:hover {
+    font-weight: normal;
+    background: #CCC;
+}
+
+.line-separator, hr {
+    box-shadow: inset 0px 1px gray, inset -1px -1px #fff, inset 2px 2px silver, inset -2px -2px #dfdfdf;
+}
+
+.taskbarPanel.activeTab, .button:hover {
+    font-weight: normal !important;
+    background-color: #CCC;
+}
+
+/*Code that fixes text*/
+
+html,body,div,/*span,*/object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+h1 {font-size: 1.5em !important;margin-bottom: 10px;}
+p{font-size: 1em;line-height: 1.3em;margin-bottom: 10px;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+
+/*Window sizes*/
+#window0 {	top: 5%;	left: 10%;}
+#window1 {	top: 10%; left: 15%;}
+#window2 {	top: 15%; left: 20%;}
+#window3 {	top: 20%; left: 25%;}
+#window4 {	top: 25%; left: 30%;}
+#window5 {	top: 125px; left: 420px;}
+#window6 {	left: 125px; top: 23px;}
+#window7 {	top: 222px; left: 100px;}
+#window8 {	top: 140px; left: 200px;}
+#window9 {	top: 230px; left: 210px;}
+#window10 {	top: 100px; left: 200px}
+#window11 {	top: 120px; left: 350px;}
+#window12 {	top: 15%; left: 20%;}
+#window13 {	top: 20%; left: 25%;}
+#window14 {	top: 25%; left: 30%;}
+#window15 {	top: 125px; left: 420px;}
+#window16 {	left: 125px; top: 23px;}
+#window17 {	top: 222px; left: 100px;}
+#window18 {	top: 140px; left: 200px;}
+#window19 {	top: 230px; left: 210px;}
+#window20 {	top: 100px; left: 200px;}
+#window0 .wincontent {	width: 335px; height: 260px;	}
+#window1 .wincontent {	width: 626px; height: 386px;   min-width: 450px;  min-height: 161px;  }
+#window2 .wincontent {	width: 660px; height: 400px;	}
+#window3 .wincontent {	width: 660px; height: 400px;	}
+#window4 .wincontent {	width: 660px; height: 400px;	}
+#window5 .wincontent {	width: 390px; height: 400px;	}
+#window6 .wincontent {	width: 390px; height: 390px;	}
+#window7 .wincontent {	width: 450px; height: 220px;	}
+#window8 .wincontent {	width: 640px; height: 480px;	}
+#window9 .wincontent {	width: 200px; height: 60px;	    }
+#window10 .wincontent {	width: 510px; height: 288px;	}
+#window11 .wincontent {	width: 452px; height: 358px;	}
+#window12 .wincontent {	width: 660px; height: 400px;	}
+#window13 .wincontent {	width: 660px; height: 400px;	}
+#window14 .wincontent {	width: 660px; height: 400px;	}
+#window15 .wincontent {	width: 660px; height: 400px;	}
+#window16 .wincontent {	width: 660px; height: 400px;	}
+#window17 .wincontent {	width: 660px; height: 400px;	}
+#window18 .wincontent {	width: 660px; height: 400px;	}
+#window19 .wincontent {	width: 660px; height: 400px;	}
+#window20 .wincontent {	width: 660px; height: 400px;	}
+/*@media screen and (max-width:960px){
+	#window0 {	left: 10px;	}
+	#window3 {	left: 50px;	}	
+}
+@media screen and (max-width:770px){
+	#window0 .wincontent {	width: 460px;	}
+	#window2 {	left: 100px;	}
+	#window1 {	top: 190px;	left: -5px;	}
+}
+@media screen and (max-width:540px){
+#window0 .wincontent {	width: 230px; height: 200px;	}
+#window3 .wincontent {
+    width: 275px;
+    height: auto;
+} */
+/* #window3 {    top: 9px;    left: 10px;	}
+#window2 {    left: -118px;	}
+#window1 .wincontent {    width: auto;    height: 300px;	} */
+}
+hr{display:block;height:2px;border:0;border-top:0px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+
+/*ALL PREVIOUSLY IN-LINE CSS BECAUSE THAT CODE IS REALLY MESSY AND I'M TRYING TO FIX IT*/
+
+/*                                                           
+        CCCCCCCCCCCCC   SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS 
+     CCC::::::::::::C SS:::::::::::::::S SS:::::::::::::::S
+   CC:::::::::::::::CS:::::SSSSSS::::::SS:::::SSSSSS::::::S
+  C:::::CCCCCCCC::::CS:::::S     SSSSSSSS:::::S     SSSSSSS
+ C:::::C       CCCCCCS:::::S            S:::::S            
+C:::::C              S:::::S            S:::::S            
+C:::::C               S::::SSSS          S::::SSSS         
+C:::::C                SS::::::SSSSS      SS::::::SSSSS    
+C:::::C                  SSS::::::::SS      SSS::::::::SS  
+C:::::C                     SSSSSS::::S        SSSSSS::::S 
+C:::::C                          S:::::S            S:::::S
+ C:::::C       CCCCCC            S:::::S            S:::::S
+  C:::::CCCCCCCC::::CSSSSSSS     S:::::SSSSSSSS     S:::::S
+   CC:::::::::::::::CS::::::SSSSSS:::::SS::::::SSSSSS:::::S
+     CCC::::::::::::CS:::::::::::::::SS S:::::::::::::::SS 
+        CCCCCCCCCCCCC SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS   
+
+*/
+
+button.dropbtn {
+  box-shadow: none;
+min-width: unset;
+min-height: unset;
+}
+
+/**, span, .wincontent, -webkit-scrollbar-thumb:hover {cursor: url(http://www.geocities.ws/ethanf44/misc/cursor1.cur),auto !important;}
+a:hover, a {cursor: url(http://www.geocities.ws/ethanf44/misc/cursor1.cur),auto !important;}
+*/
+#window0 > .wincontent {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+#window0 > .wincontent::-webkit-scrollbar {
+  display: none;
+}
+
+#userPFP {
+  border-radius: 0px;
+border: 2px solid #000;
+}
+
+.abtRimet {
+ float: left;
+ margin-left: 42px;
+ font-size: 11px;
+ line-height: 1.5;
+}
+
+#window0 > .wincontent, #window6 > .wincontent {
+  overflow: hidden;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+
+.dropbtn {
+  background: none;
+  color: white;
+  width: 23px;
+  height: 20px;
+  bottom: 4px;
+  left: 0px;
+  border: none !important;
+  outline: none !important;
+}
+.dropup {
+  position: absolute;
+  bottom: -3px !important;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+}
+
+#iconDesktop {
+  position: absolute;
+}
+
+.contents {
+  color: black;  
+  position: absolute;
+background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	 font-family: "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+	font-size: 11px;
+  width: 170px;
+  bottom: 28px;
+  left: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  z-index: 1;
+}
+#icons {
+  color: #FFF;  
+	 font-family: "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+		background: none !important;
+	font-size: 10px;
+}
+* {	
+	-webkit-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-ms-user-select: none;
+}
+
+
+.iconText {
+  /*padding-left: 4px;
+  padding-right: 5px;*/
+  margin-top: -5px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.iconText:hover {
+ 	background: rgb(0, 0, 128);
+	color: #FFF;
+}
+
+.desktopIcon:hover {
+  cursor: pointer;
+}
+
+/*.desktopIcon > img {
+    margin: 0px 0px -6px 4px;
+}*/
+.rLogo {
+ height:240px;
+ width:30px;
+ bottom:35px;
+ z-index: 1;
+ font-family:'Trebuchet MS'; 
+ font-weight: bold;
+}
+
+
+/*.startItems {
+  padding-left:30px;
+}*/
+
+
+.dropup-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {
+  background: #000080;
+  color: #FFF;
+  }
+
+/*.rLogo {
+   background: url(rimet.png);
+   background-color: navy;
+  color: #FFF !important;
+  float:left;
+  }*/
+
+/*.dropup:hover .dropup-content {
+  display: block;
+  text-shadow: none !important;
+}*/
+
+.show {display: block;}
+.startOpened {display: block;}
+
+body, #about {
+  overflow: hidden;
+}
+
+
+iframe, embed {
+  overflow: scroll;
+}
+
+.line-separator{
+height: 2px;
+margin:5px;
+box-shadow: inset 1px 1px #545454, inset -1px -1px #fff, inset 2px 2px silver, inset -2px -2px #dfdfdf !important;
+background: silver;
+}
+
+#txt {
+  position: relative;
+  bottom: -8px;
+  right: 10px;
+  float: right;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Segoe UI, Roboto, Fazu Sans, Helvetica, Arial; 
+  font-size: 11px;
+ font-weight: normal;
+}
+
+#interTop {
+ margin-top: 6px !important; 
+ margin-left: 3px !important;
+}
+#window1 > .wincontent {
+  padding: 2px;
+  /*border: none;*/
+  }
+  
+  #window1.window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent {
+    padding: 5px 2px 0px 5px !important;
+    border: none !important;
+}
+  
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent > #Inter {
+  height: 95%;
+  width: 100%;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent > #interTop > #interBar > #addressbar {
+  width: 90% !important;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent > #interTop {
+  margin-top: -4px !important;
+  }
+  
+  .window.ui-draggable.ui-draggable-handle.fullSizeWindow > .wincontent {
+  /*padding: 10px;*/
+  border: none;
+  }
+  
+  
+#cpl {
+    font-family: Microsoft Sans Serif, MS Sans Serif, "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Jomolhari, Times New Roman, sans-serif;
+}
+.button {
+   background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+	font-family: Microsoft Sans Serif, MS Sans Serif, "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Jomolhari, Times New Roman, sans-serif;
+  padding: 10px;
+  display: inline-block;
+}
+.button:active {
+	box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #0a0a0a;
+}
+
+#cpl a {
+  color: #000;
+  text-decoration: none;
+}
+
+#reset a:hover {
+  font-style: normal;
+}
+
+.empty {
+ height: 1000px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block; 
+}
+
+.themeSelect-content {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  min-width: 240px;
+  z-index: 1;
+  height: 150px !important;
+overflow-y: scroll !important;
+overflow-x: visible;
+}
+
+.themeSelect-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+.themeSelect-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .themeSelect-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#icon1 > .desktopIcon > .iconText {
+    margin-right: 1px!important;
+}
+			
+#icon2 > .desktopIcon > .iconText {
+    margin-left: -2px !important;
+}
+
+#icon3 > .desktopIcon > .iconText {
+    margin-right: 0px!important;
+}
+
+#icon4 > .desktopIcon > .iconText {
+    margin-right: -4px!important;
+}
+
+/*#window7 > .wincontent {
+ background-color: #000 !important;
+ color: lime !important;
+ box-shadow: none;
+}*/
+
+
+#okButton, #okButton:hover {
+      padding: 3px 28px 3px 28px !important;
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+}
+
+#langBtn0, #langBtn0:hover {
+      padding: 3px 28px 3px 28px !important;
+    position: absolute;
+    bottom: 13px !important;
+    left: 15px !important;
+}
+
+#langBtn1, #langBtn1:hover {
+      padding: 3px 28px 3px 28px !important;
+    position: absolute;
+    bottom: 13px !important;
+    left: 120px !important;
+}
+  
+  #langButton {
+     padding: 6px 28px 6px 28px !important;
+     font-size: 11px;
+  }
+  
+#interBar {
+ margin-left: 25px;
+}
+#addressbar {
+    width: 88%;
+    float: left;
+    position: relative;
+    margin-bottom: 4px;
+}
+#interHome, #interBack, #interForward, #interGo {
+ position: relative;
+ float: left;
+ left: 0px;
+ margin: 2px;
+ margin-top: 1px;
+}
+#interForward {
+  margin-right: 5px !important;
+}
+#interHome > img, #interBack > img, #interForward > img, #interGo > img {
+   width: 20px;
+}
+
+/*9x scrollbar by dakedres*/
+
+body *::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: none;
+}
+
+body *::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-button {
+  width: 16px;
+  height: 16px;
+  background: silver;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+  border: 1px solid;
+  border-color: silver #000 #000 silver;
+}
+
+body *::-webkit-scrollbar-track {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 2px;
+}
+
+body *::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+body *::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-corner {
+  background: silver;
+}
+
+/* New Rimet Default by APH6000 */
+
+#window0 > .wincontent, #window6 > .wincontent {
+   /* background-color: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff; */
+       background: none;
+    box-shadow: none;
+}
+
+.button, .contents .button, .contents, .themeSelect-content {
+   background-color: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+}
+
+.taskbarPanel.activeTab {
+    font-weight: normal;
+    background: silver;
+  /*  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #0a0a0a !important;*/
+}
+
+.button:active {
+        background-color: silver;
+  /* box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #0a0a0a !important;*/
+}
+
+#window0 > .windowHeader > #comments, #window6 > .windowHeader > #comments, #window7 > .windowHeader > #comments {
+  right: 27px;
+}
+
+#comments {
+  font-size: 11px;
+  text-decoration: underline;
+  top: 5.5px;
+  float: right;
+  color: white;
+  position: absolute;
+}
+
+.windowHeader > strong {
+    left: 18px;
+    top: -2px;
+}
+
+#window0 > .windowHeader > strong {
+    left: 23px;
+    /*top: -4px;*/
+}
+
+#icons {
+  color: #FFF;  
+		background: none !important;
+	font-size: 11px;
+}
+
+.winclose:active, .winmaximize:active, .winminimize:active {
+    background: silver;
+    box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset -2px -2px silver, inset 2px 2px gray!important;
+    border-radius: 0px;
+    color: #000;
+    font-weight: bold;
+        height: 18px;
+}
+
+.winclose:active > img {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+.winmaximize:active > span {
+  top: 4px;
+  left: 4px;
+}
+
+.winminimize:active > span {
+    top: 9px;
+    left: 4px;
+}
+
+[role=tabpanel] {
+box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px grey, inset -2px -2px grey, inset 2px 2px #fff;
+}
+
+menu[role=tablist] button, menu[role=tablist] button:active {
+box-shadow: inset -1px 0px #0a0a0a, inset 1px 1px grey, inset -2px 0px grey, inset 2px 2px #fff;
+}
+
+menu[role=tablist] button[aria-selected=true] {
+    margin-top: -3px;
+}
+
+.dropbtn:active {
+  box-shadow: none !important; 
+}
+
+

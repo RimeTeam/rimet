@@ -1,0 +1,76 @@
+#openAbout {
+ background-image: url(icons/AboutRimet.png) !important;
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+  padding-left: 32px !important;
+}
+
+#openIntr {
+ background-image: url(icons/Inter.png) !important;
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openWvPC {
+ background-image: url(icons/WVPC.png) !important;
+  background-position: 5.5% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openNtpd {
+ background-image: url(xp/notepad.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openHtCb {
+ background-image: url(icons/HTMLComments.png) !important;
+  background-position: 5% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openChtn {
+ background-image: url(icons/Chatango.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openCtPl {
+ background-image: url(xp/cpl.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openRmTs {
+ background-image: url(icons/Rimetunes.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openDsVr {
+ background-image: url(icons/digishellogo.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openTnCt{
+ background-image: url(icons/16TitanHW.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}
+
+#openTpWr {
+ background-image: url(icons/16Typewriter.png) !important;
+  background-position: 6% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 32px !important;
+}

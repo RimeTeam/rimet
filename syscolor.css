@@ -1,0 +1,171 @@
+/* Windows System Colors by aph6000 */
+/* Does not function properly on Google Chrome. (untested on other browsers) */
+/* Works on Firefox and Pale Moon based browsers */
+
+@import url("winclassic.css");
+
+.taskbarPanel, .button, .themeSelect-content, .winclose, .winmaximize, .winminimize, [role=tabpanel], .audioplayer-bar-played::after{
+    background-color: ButtonFace !important;
+    box-shadow: inset -1px -1px ThreeDDarkShadow, inset 1px 1px ThreeDHighlight, inset -2px -2px ThreeDShadow, inset 2px 2px ThreeDLightShadow !Important;
+            color: ButtonText !important;
+}
+
+.contents {
+        background-color: Menu !important;
+    box-shadow: inset -1px -1px ThreeDDarkShadow, inset 1px 1px ThreeDLightShadow, inset -2px -2px ThreeDShadow, inset 2px 2px ThreeDHighlight !important;
+    font: Menu;
+}
+.audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+        background-color: ButtonFace !important;
+        color: ButtonText !important;
+}
+
+.audioplayer-playing .audioplayer-playpause {
+            background-color: ButtonFace !important;
+            color: ButtonText !important;
+}
+
+.audioplayer-playpause {
+    box-shadow: inset -1px -1px ThreeDDarkShadow, inset 1px 1px ThreeDHighlight, inset -2px -2px ThreeDShadow, inset 2px 2px ThreeDLightShadow;
+        color: ButtonText !important;
+}
+
+.audioplayer-playpause:active {
+box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDDarkShadow, inset -2px -2px ThreeDLightShadow, inset 2px 2px ThreeDShadow;
+        color: ButtonText !important;
+}
+
+menu[role=tablist] button {
+        background-color: ButtonFace !important;
+    box-shadow: inset 1px 1px ThreeDHighlight, inset 2px 2px ThreeDLightShadow, inset -1px 0 ThreeDDarkShadow, inset -2px 0 ThreeDShadow !important;
+            color: ButtonText !important;
+}
+
+.window {
+    box-shadow: inset -1px -1px ThreeDDarkShadow, inset 1px 1px ThreeDLightShadow, inset -2px -2px ThreeDShadow, inset 2px 2px ThreeDHighlight;
+    background: ButtonFace;
+        font: message-box;
+}
+
+
+.menu {
+    box-shadow: inset -1px -1px ThreeDDarkShadow, inset 1px 1px ThreeDLightShadow, inset -2px -2px ThreeDShadow, inset 2px 2px ThreeDHighlight !important;
+    background: ButtonFace !important;
+}
+
+.winmaximize:active, .winminimize:active {
+    background: ButtonFace !important;
+box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDDarkShadow, inset -2px -2px ThreeDLightShadow, inset 2px 2px ThreeDShadow;
+        color: ButtonText !important;
+        height: 14px;
+        left: -2px !important;
+    top: 0px !important;
+}
+
+.winclose:active {
+    background: ButtonFace !important;
+box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDDarkShadow, inset -2px -2px ThreeDLightShadow, inset 2px 2px ThreeDShadow;
+        color: ButtonText !important;
+    background-repeat: no-repeat;    
+    background-position: 60% 55% !important;
+        height: 14px !important;
+}
+ 
+.windowHeader {
+    background: linear-gradient(
+90deg,ActiveCaption,ActiveCaption);;
+    color: CaptionText;
+    font: caption !important;
+}
+
+#icons {
+    font: icon;
+}
+
+.windowHeader > strong, #window0 > .windowHeader > strong, #comments {
+        font: caption !important;
+    color: CaptionText !important;
+    top: 7px;
+}
+
+#comments {
+    top: 7.5px !important;
+    float: right;
+    
+}
+.line-separator, hr {
+    box-shadow: inset 0px 1px ThreeDShadow, inset -1px -1px ThreeDHighlight, inset 2px 2px ButtonFace, inset -2px -2px ThreeDLightShadow;
+        background: ButtonFace;
+}
+
+.wplist {
+    box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDShadow, inset -2px -2px ThreeDLightShadow, inset 2px 2px ThreeDDarkShadow !important;
+    background: Window !important;
+    color: WindowText !important;
+}
+
+input[type=text] {
+    box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDShadow, inset -2px -2px ThreeDLightShadow, inset 2px 2px ThreeDDarkShadow !important;
+    background: Window !important;
+    color: WindowText !important;
+    border: none;
+}
+
+.taskbarPanel.activeTab, .button:active {
+    background: ButtonFace;
+    box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDDarkShadow, inset -2px -2px ThreeDLightShadow, inset 2px 2px ThreeDShadow !important;
+}
+
+.dropup-content a {
+    color: MenuText;
+}
+
+#taskbar {
+    height: 28px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: ButtonFace;
+    box-shadow: inset 0px 1px ButtonFace, inset 0px 2px ThreeDHighlight;
+    color: ButtonText;
+}
+
+#txt {
+    box-shadow: inset -1px -1px ThreeDHighlight, inset 1px 1px ThreeDShadow !important;
+    padding: 5px;
+    bottom: -3px !important;
+}
+
+body {
+    background-color: Background;
+}
+
+.abtRimet, .wincontent a {
+  color: WindowText;
+    font: message-box;
+}
+
+.rimetPossible, .sysinfo-title {
+color: WindowText;
+        font: message-box;
+}
+
+  .theme-credit::after { 
+  content: "Windows System Colors Theme by APH6000." !important;
+}
+
+.dropup-content a:hover, .iconText:hover {
+  background: Highlight;
+  color: HighlightText;
+    font: Menu;
+  }
+
+.iconText {
+    font: Icon !important;
+}
+
+
+ .menu-option {
+               color: ButtonText !important;
+               font: message-box;
+ }

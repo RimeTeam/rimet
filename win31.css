@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'System';
+    src: url('system.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#progMan {
+    display: inline-block !important;
+  }
+
+body {
+    background-color: silver;
+    background-image: none;
+}
+
+.abLineB1, .abLineB5 {
+ display: none !important; 
+}
+    
+    desktop {
+        background: none !important;
+    }
+
+     #window10 > .windowHeader > .winclose {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    
+    #taskbar, .Desktop-Icons {
+       visibility: hidden !important;
+        z-index: 0 !important;
+    }
+    
+    .taskbarPanel {
+        visibility: visible !important;
+        left: 0 !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        z-index: 0 !important;
+    }
+    
+    #minimPanel10 {
+        visibility: visible !important;
+        display: inline-block;
+    }
+    
+.winmaximize, .winminimize {
+    background-color: silver !important;
+    box-shadow: inset -1px -1px grey, inset 1px 1px #fff, inset -2px -2px grey !important;
+    border-radius: 0px !important;
+    color: #000 !important;
+    top: -1px !important;
+    left: 1px !important;
+    font-weight: bold;
+    height: 18px;
+}
+
+   
+.wincontent {
+    background: #fff !important;
+    padding-top: 0px !important;
+    margin: 3px;
+    top: -3px;
+    margin-top: 2px;
+    margin-bottom: 0px !important;
+    border: 1px solid #000;
+}
+
+.button {
+    background: silver !important;
+    box-shadow: inset -1px -1px grey, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #fff !important;
+    border: 1px solid #000;
+    border-radius: 2px !important;
+    font-family: Microsoft Sans Serif, MS Sans Serif, Tahoma, NanumGothic, Jomolhari, Times New Roman, sans-serif;
+}
+
+.button:active {
+    background: silver;
+    box-shadow: inset 2px 2px grey !important;
+    border: 1px solid #000;
+    border-radius: 2px !important;
+    font-family: Microsoft Sans Serif, MS Sans Serif, Tahoma, NanumGothic, Jomolhari, Times New Roman, sans-serif;
+}
+
+.line-separator, hr {
+    box-shadow: inset 0px 1px black;
+    border-top: 1px solid black;
+}
+.winmaximize > span {
+    border: none;
+     background-image: url(https://media.discordapp.net/attachments/797622888466612254/888651720232693770/unknown.png);
+        background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 70% !important;
+            top: 5px !important;
+    left: 5px !important;
+}
+
+.windowHeader, #window0 > .wincontent, h2 {
+    font-family: System,"Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial;
+    font-size: 11px !important;
+    color: black;
+}
+
+.abtRimet {
+  font-size: 13px !important;
+}
+
+#comments {
+    display: none;
+}
+
+.winminimize > span {
+    border: none;
+     background-image: url(https://media.discordapp.net/attachments/797622888466612254/888651749731237889/unknown.png);
+        background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 70% !important;
+            top: 8px !important;
+    left: 5px !important;
+}
+
+#chiclose {
+    display: none;
+}
+
+.winclose {
+        background-color: silver !important;
+        top: -2px !important;
+    left: -2px !important;
+    box-shadow: none !important;
+        background-image: url(https://cdn.discordapp.com/attachments/797622888466612254/888644577131651113/3.1_minus.PNG) !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 70% !important;
+        border: 1px solid #000 !important;
+}
+
+.windowHeader {
+    background: navy;
+    color: #FFF;
+    text-align: right;
+    border-bottom: 0px solid #000;
+    box-shadow: inset 1px 1px #000, inset -1px -1px #000 !important;
+    padding: 2px;
+    cursor: move;
+    margin: 3px;
+        margin-bottom: 0px !important;
+    height: 16px;
+}
+
+.windowHeader > span {
+
+    margin-left: 0px;
+    font-size: 28px;
+    
+    padding: 0px 0px;
+    line-height: 28px;
+    width: 18px !important;
+    height: 18px !important;
+        border-left: 1px solid #000;
+}
+
+.windowHeader > strong {
+padding-left: 0px !important;
+top: 13px !important;
+}
+
+.window {
+    position: absolute;
+    border: 1px solid #000;
+    box-shadow: none;
+    background: silver;
+}
+
+.menu {
+    display: none;
+        border: 1px solid #000;
+    box-shadow: none;
+    background: white;        
+}
+
+.menu-option {
+    font-family: System !important;   
+    font-size: 12px;
+}
+.windowHeader > strong, #window0 > .windowHeader > strong {
+    font-family: System;
+    position: absolute;
+    font-size: 13px;
+    left: 50%;
+    background: none !important;
+    top: 14px;
+    transform: translate(-50%, -50%);
+    font-weight: normal !important;
+}
+
+    .window.fullSizeWindow > .wincontent {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        padding-right: 0 !important;
+        margin-top: 3px !important;
+    }
+    
+.menu {
+    box-shadow: none;
+    background: white;
+}

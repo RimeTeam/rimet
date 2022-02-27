@@ -1,0 +1,390 @@
+
+.tabbed > section > div {
+    background: red !important;
+    border: 1px solid yellow !important;
+}
+
+.tabbed > section > h1 > label {
+    background: red !important;
+    border: 1px solid yellow !important;
+        border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+  .windowHeader > span:active {
+  box-shadow: none !important;
+}
+
+  #window9 > .windowHeader > .winclose {
+    left: 2px !important;
+  }
+
+#window11 > .windowHeader > .winclose {
+    left: -21px !important;
+}
+
+
+.wincontent a.theme {
+    color: #FFF000;
+}
+
+a, a:hover, a:active, a:visited {
+    color: yellow;
+}
+
+.themeSelect-content a {
+  color: red !important;
+}
+
+.windowHeader > strong {
+ padding-left: 0px !important; 
+ background: none !important;
+}
+
+#window0 > .windowHeader > #comments {
+    right: 3px !important;
+}
+
+#window0 > .windowHeader > .winclose, #window6 > .windowHeader > .winclose, #window7 > .windowHeader > .winclose {
+  left: -19px !important;
+}
+
+#window0 > .windowHeader > .winminimize, #window6 > .windowHeader > .winminimize, #window7 > .windowHeader > .winminimize {
+  left: 28px !important;
+}
+
+#window0 > .windowHeader > strong, #window6 > .windowHeader > strong, #window7 > .windowHeader > strong {
+left: 60px !important;
+} 
+
+#header a {
+  color: #FFF000 !important;
+  text-decoration: none;
+}
+
+
+.desktopIcon > span {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+#icons {
+  font-family: Arial, Helvetica Neue, NanumGothic, sans-serif !important;
+	font-size: 11px !important;
+}
+
+.window {
+  background: #FFF !important;
+}
+
+  .theme-credit::after { 
+  content: "Capt. Y's Theme by Captain Yellow" !important;
+}
+
+.windowHeader {
+  margin: 0px !important;
+}
+
+* {
+     box-shadow: none !important;
+  }
+  
+  .dropbtn2, .dropbtn3 {
+  display: none !important;  
+  }
+  
+  .windowHeader {
+    background-color: yellow !important;
+    
+    box-shadow: none !important;
+    
+    height: 20px !important;
+    
+  }
+  
+  .window, .windowHeader {
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  .windowHeader > strong {
+    color: red !important;
+    position: absolute;
+    font-family: Arial !important;
+    font-size: 16px;
+    font-weight: bold !important;
+    top: -2px !important;
+    left: 80px !important;
+  }
+   #comments {
+       color: red !important;
+    font-family: Arial !important;
+    font-size: 20px !important;
+    letter-spacing: 2px;
+    font-weight: normal !important;
+    text-decoration: none;
+     
+    top: 1px !important;
+     
+    border: solid black 2px;
+     
+    right: 3px !important;
+     
+    background: #c7c7c7;
+     
+    float: right;
+     
+    height: 18px !important;
+     
+     width: 30px !important;
+     
+     border-radius: 30px !important;
+     
+    position: absolute;
+  }
+  
+  #commentext {
+    display: none !important;
+  }
+  .windowHeader > span {
+    box-shadow: none !important;
+    border: solid black 2px;
+  }
+  
+  #comments:hover::after {
+    content: "?";
+    font-family: Arial !important;
+    color: black;
+    font-size: 15px;
+    top: 2px;
+    position: absolute;
+    left: 12px !important;
+}
+  
+  .winclose:hover::after {
+    content: "x";
+    font-size: 15px;
+    color: #a3192c;
+    top: -7px !important;
+    position: absolute;
+    left: 5px !important;
+}
+  
+  .winminimize:hover::after {
+    content: "-";
+    font-size: 15px;
+    color: #975610;
+    top: -5px !important;
+    position: absolute;
+    left: 5.5px !important;
+}
+  
+ .winmaximize:hover::after {
+    content: "+";
+    font-size: 15px;
+    color: #0d7301;
+    top: -5px !important;
+    position: absolute;
+    left: 4px !important;
+}
+  
+  .winclose > img, .winminimize > span, .winmaximize > span {
+    display: none !important;
+  }
+  
+   .winclose {
+   left: -42px !important; 
+   top: -1px;
+     background: #fd5652 !important;
+   border-radius: 30px !important;
+   float: left !important;
+}
+
+
+   .winmaximize {
+    left: 28px !important;
+     float: left !important;
+     background: #33c949 !important;
+    border-radius: 30px !important;
+    top: -1px;
+  }
+
+  .winminimize > span {
+  left: 4.2px !important;
+  }
+
+  .winminimize {
+  left: 26px !important;
+  float: left !important;
+    background: #fdbd41 !important;
+  border-radius: 30px !important;
+  top: -1px;
+  }
+  
+  #box, #cpl {
+    font-family: Arial !important;
+  }
+  
+  .wplist > strong {
+    color: red !important;
+  }
+  
+  #window0 > .wincontent, #window6 > .wincontent {
+    box-shadow: none !important;
+    border: solid black 2px;
+     background-color: red !important;
+    color: yellow;
+    font-family: Arial !important;
+  }
+  #taskbar {
+    background-color: yellow !important;
+    box-shadow: none !important;
+     border: solid black 2px;
+  }
+  .taskbarPanel {
+    box-shadow: none !important;
+    background-image: none !important;
+    padding: 0px 10px !important;
+    background: #FFF000;
+    top: -3px !important;
+    left: 65px !important;
+    border: solid black 2px;
+    border-radius: 5px !important;
+    color: red;
+    
+    font-family: Arial !important;
+  }
+  .taskbarPanel.minimizedTab {
+    background: yellow !important;
+}
+  .taskbarPanel.minimizedTab:hover {
+    background: gold !important;
+  }
+   .taskbarPanel.activeTab {
+    background: red !important;
+    color: yellow !important;
+  }
+  #txt {
+    bottom: -3.5px !important;
+    box-shadow: none !important;
+    font-family: Arial !important;
+    color: red !important;
+  }
+  .contents, .themeSelect-content {
+    background: yellow !important;
+    color: red !important;
+    box-shadow: none !important;
+    border: solid red 2px;
+    left: 5px !important;
+    font-family: Arial !important;
+  }
+  
+  .dropup-content a:hover {
+  background: red !important;
+  color: yellow !important;
+  }
+  
+  .dropup-content a {
+  background: yellow !important;
+  color: red !important;
+  }
+  desktop {
+    background-image: none;
+  }
+  
+  body, #themePreview {
+    background-color: yellow;
+    background-image: url('cy/cy.jpeg');
+    background-size: cover;
+  }
+  
+  #themePreview > #window0 > .windowHeader {
+  width: 228px !important;
+}
+
+ #themePreview > #window0 > .wincontent {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+ }
+  
+  #themePreview {
+    border: 1px solid yellow;
+  }
+  .button {
+    box-shadow: none !important;
+    border: solid yellow 2px;
+    background: red !important;
+    color: yellow !important;
+    font-family: Arial !important;
+  }
+  .button:hover, #langBtn0:hover, #langBtn1:hover, #themeButton:hover {
+    box-shadow: none !important;
+    border: solid yellow 2px;
+    background: yellow !important;
+    color: red !important;
+    font-family: Arial !important;
+  }
+  #cpl a, #box a {
+    color: yellow !important;
+    text-decoration: none !important;
+}
+  #rimetbtn {  
+    display: none;  
+  }
+  
+  .dropbtn {
+    background-image: url('cy/rimet6.png') !important;  
+    background-size: 100% !important;
+    top: -6px !important;  
+    left: 5px !important; 
+    position: relative !important;  
+    width: 54px !important; 
+    height: 22px !important;
+  }
+  
+  .dropbtn:active {
+    background-image: url('cy/primet1.png') !important;  
+  }
+  
+  /*JP "fix", because this is already in the code*/
+  .taskbarPanel {
+    top: -3px !important;
+  }
+  
+  [role=tabpanel] {
+    background: none;
+    border: 2px solid yellow;
+    border-radius: 0px;
+        box-shadow: none !important;
+        color: yellow;
+}
+
+menu[role=tablist] button {
+    background: none;
+    color: yellow;
+    border-left: 2px solid yellow;
+        border-top: 2px solid yellow;
+            border-right: 2px solid yellow;
+        box-shadow: none !important;
+}
+
+menu[role=tablist] button:first-of-type:before {
+display: none;
+}
+
+menu[role=tablist] button[aria-selected=true] {
+    background-color: red;
+}
+
+.rimetPossible, .sysinfo-title, .themeSelect-content > strong, .wplist > strong {
+font-family: Arial, "Pixelated MS Sans Serif", "Microsoft Sans Serif", "MS Sans Serif", "Pixelated MS Sans Serif", "Microsoft Sans Serif", Tahoma, NanumGothic, Arial !important;
+}
+
+.menu { 
+box-shadow: none !important;
+    border: solid yellow 2px;
+    background: red !important;
+    color: yellow !important;
+}
+
+.menu-option {
+      font-family: Arial !important;
+}

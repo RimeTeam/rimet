@@ -1,0 +1,19 @@
+.wincontent, #window0 {
+    width: 100% !important;
+    height: 100% !important;
+    background: none !important;
+    border: none !important;
+  }
+  .windowHeader {
+    display: none;
+  }
+  
+  body {
+    background-image: url('https://ethanf44.xyz/rimet/always_grey.png') !important;
+    background-color: #FFF !important;
+  }
+  
+  desktop {
+     background-image: url('https://ethanf44.xyz/rimet/always_grey.png') !important;
+    background-color: #FFF !important;
+  }

@@ -1,0 +1,110 @@
+<title>Rimet</title>
+<head>
+<meta http-equiv="pragma" content="no-cache" />
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script><title>Rimet Desktop</title>	
+<!--	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" title="theme0" href="empty.css"> 
+<link rel="alternate stylesheet 1" type="text/css" title="theme1" href="classic.css"> 
+<link rel="alternate stylesheet 2" type="text/css" title="theme2" href="marble.css"> 
+<link rel="alternate stylesheet 3" type="text/css" title="theme3" href="cy.css"> 
+<link rel="alternate stylesheet 4" type="text/css" title="theme4" href="sow.css"> 
+<link rel="alternate stylesheet 5" type="text/css" title="theme5" href="win10.css"> 
+<link rel="alternate stylesheet 6" type="text/css" title="theme6" href="underwater.css"> 
+<link rel="alternate stylesheet 7" type="text/css" title="theme7" href="window.css"> 
+<link rel="alternate stylesheet 8" type="text/css" title="theme8" href="vapor.css">
+<link rel="alternate stylesheet 9" type="text/css" title="theme9" href="ecfweb.css">
+<link rel="alternate stylesheet 10" type="text/css" title="theme10" href="mos1.css">
+<link rel="alternate stylesheet 11" type="text/css" title="theme11" href="parappa.css">-->
+<style>
+
+#bar {
+margin: 0 auto;
+width: 250px;height: 10px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;height: 100%;
+background: url('ad40-pdb.png');
+} 
+
+* { font-family: Trebuchet MS, "Arial", sans-serif; }
+
+#wrap { text-align: center; width: 100%; height: 100%; }
+
+#bar {
+margin: 0 auto;
+width: 250px;
+text-align: left;
+border: 1px solid white;
+}
+
+h1 {
+ font-size: 5vw; 
+}
+
+body {
+  background: #000;
+}
+body {
+  font-family: "MS Sans Serif", Microsoft Sans Serif, Segoe UI, Roboto, Fazu Sans, Helvetica, Arial, sans serif;
+}
+* {
+  color: orange;
+}
+
+</style>
+
+<body onLoad='progress();'>
+<div id='wrap'>
+<br><br><br><br><br>
+<div class="tab"><h1> It is now safe to close this tab. </h1></div>
+<br>
+<script>
+// *** TO BE CUSTOMISED ***
+
+var style_cookie_name = "theme" ;
+var style_cookie_duration = 30 ;
+var style_domain = "ethanf44.xyz" ;
+
+// *** END OF CUSTOMISABLE SECTION ***
+// You do not need to customise anything below this line
+
+function switch_style ( css_title )
+{
+// You may use this script on your site free of charge provided
+// you do not remove this notice or the URL below. Script from
+// https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+  var i, link_tag ;
+  for (i = 0, link_tag = document.getElementsByTagName("link") ;
+    i < link_tag.length ; i++ ) {
+    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+      link_tag[i].title) {
+      link_tag[i].disabled = true ;
+      if (link_tag[i].title == css_title) {
+        link_tag[i].disabled = false ;
+      }
+    }
+    set_cookie( style_cookie_name, css_title,
+      style_cookie_duration, style_domain );
+  }
+}
+function set_style_from_cookie()
+{
+  var css_title = get_cookie( style_cookie_name );
+  if (css_title.length) {
+    switch_style( css_title );
+  }
+}
+</script>
+</div>

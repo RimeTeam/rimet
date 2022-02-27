@@ -1,0 +1,364 @@
+
+/*Rimet ND Fix */
+  
+  .windowHeader > span:active {
+  box-shadow: none !important;
+}
+
+#comments {
+  display: none !important;
+}
+  
+.shutDown {
+  color: #000 !important;
+}
+
+.shutDown:hover {
+  color: #FFF !important;
+}
+
+#window0 > .wincontent {
+  padding: 0px !important;
+}
+
+#startUsername {
+   letter-spacing: -0.7px !important;
+ }
+
+.windowHeader > strong {
+  left: -10px !important;
+  font-family: Tahoma !important;
+}
+
+#window0 > .windowHeader > strong {
+    left: -3px !important;
+}
+
+.taskbarPanel {
+  background-image: none !Important;
+  padding: 3px 10px !important;
+}
+
+#window0 > .windowHeader > #comments {
+  right: 50px !important;
+}
+
+ .desktopIcon > .iconText {
+	background: #D49900;
+	font-size: 11px;
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+	margin-right: 6px !important;
+	color: #FFF;
+}
+
+.wincontent {
+  font-family: Tahoma, NanumGothic, Arial, sans-serif !important;
+}
+
+.windowHeader {
+  margin: 0px !important;
+}
+
+.theme-credit::after { 
+  content: "Marble Madness created by Ethan F." !important;
+}
+
+.windowHeader > span {
+ box-shadow: none !important; 
+}
+
+#comments {
+  font-size: 11px;
+  text-decoration: underline;
+  top: 4.5px !important;
+  right: 77px !important;
+  float: right;
+  position: absolute;
+}
+
+desktop, #themePreview {
+ background-image: url('marble.jpeg'); 
+}
+
+desktop {
+   background-size: 10%;
+}
+
+#themePreview {
+   animation: none;
+   background-size: cover;
+}
+
+.dropup-content a {
+  padding: 0px 0px 3px 10px !important;
+}
+
+.contents {
+bottom: 30px !important;
+left: 6px !important;
+}
+
+.contents, .dropup-content {
+  bottom: 28px !important;
+}
+
+.winclose {
+ left: 3px !important; 
+ top: -3px;
+ float: right !important;
+}
+
+.winmaximize {
+ left: 7px;
+ top: -3px;
+}
+
+.winminimize > span {
+left: 4.2px !important;
+}
+
+.audioplayer-playpause {
+box-shadow: none !Important;
+}
+.winminimize {
+ left: 11px;
+ top: -3px;
+}
+
+
+#chiclose {
+ display: none;
+}
+
+.winclose::after {
+    content: "x";
+    top: -3px;
+    position: absolute;
+    left: 5px;
+}
+
+.windowHeader, #taskbar, .abt-rmt, .contents, .themeSelect-content, #txt, .wincontent, .button, .taskbarPanel {
+ box-shadow: none !important; 
+ font-family: Tahoma !important;
+}
+
+.button, .taskbarPanel, .contents, .themeSelect-content {
+   border: 1px solid #000;
+}
+
+.button:hover {
+   background: grey; 
+   color: #FFF;
+   font-weight: bold;
+}
+
+body {
+  color: #000;
+}
+  a {
+    text-decoration: none;
+}
+
+.button, .theme {
+  color: #000 !important;
+}
+
+.contents {
+  bottom: 32px;
+}
+
+
+
+a, a:hover, a:active, a:visited { color: white; }
+
+#desktop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+	overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.window {
+    position: absolute;
+    border: 2px solid #000;
+    background: #FFF;
+	z-index: 1000;
+}
+.window.closed {
+	display: none;
+}
+.window.minimizedWindow {
+	display: none;
+}
+.window.fullSizeWindow {
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    border-radius: 0;
+    bottom: 32px !important;
+}
+.fullSizeWindow .ui-resizable-handle {
+	display: none;
+}
+.windowHeader {
+    background-color: #D49900;
+    text-align: right;
+    border-bottom: 2px solid #000;
+    padding: 2px;
+    cursor: move;
+    height: 17px;
+}
+.windowHeader > span {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-left: 4px;
+    font-size: 19px;
+    padding: 2px 10px;
+    line-height: 20px;
+    width: 0px;
+    height: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.windowHeader > span:hover {
+	background: rgba(255,255,255,0.3);
+}
+.windowHeader > span.winclose:hover {
+	background: #0000ff;
+}
+.windowHeader > span > span {
+    display: inline-block;
+    height: 8px;
+    width: 10px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+.winminimize > span {
+	border-bottom: 3px solid #000;
+}
+.winmaximize > span {
+	border: 2px solid #000;
+	border-top: 3px solid #000;
+}
+.wincontent {
+    padding: 10px;
+    min-width: 200px;
+    min-height: 140px;
+    border: 2px solid #000;
+    margin: 2px;
+}
+.windowHeader > strong {
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    float: left;
+    margin: 0px 3px 0 10px;
+    line-height: 29px;
+    font-size: 11px;
+}
+
+.taskbarPanel, #minimPanel0, #minimPanel0 > .taskbarPanel.activeTab {
+    display: inline-block;
+    border: 2px solid #000;
+    line-height: 100%;
+    margin: 2px 0 0 10px;
+    font-size: 11px;
+    position: relative;
+    bottom: -1px;
+    left: 72px;
+    padding: 3px 10px !important;
+    background: #CCC;
+    font-weight: bold;
+	cursor: pointer;
+}
+.taskbarPanel.activeTab {
+	background: #CCC;
+	font-weight: bold;
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf;
+}
+.taskbarPanel.minimizedTab {
+ background: #CCC;
+}
+.taskbarPanel.minimizedTab:hover {
+	background: #E5E5E5;
+}
+.taskbarPanel.closed {
+	display: none;
+}
+#taskbar {
+position: absolute;
+	height: 27px;
+	border-top: 2px solid #000;
+	bottom: 0;
+	left: 0;
+	right: 0;
+ background-color: #D49900 !important;
+}
+
+#txt {
+bottom: -2.5px !important;
+color: #FFF !important;
+}
+
+#icons {
+	position: absolute;
+	z-index: 10;
+	top: 20px;
+	font-family: Tahoma, NanumGothic, Arial, sans-serif !important;
+	font-size: 11px !important;
+	left: 20px;
+}
+#icons a {
+    display: block;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+#templateLink {
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    right: 20px;
+    font-size: 15px;
+    color: #30478c;
+}
+
+/*JP fix*/
+  .taskbarPanel {
+    top: 1px !important;
+    height: 10px !important;
+  }
+  .winName::after {
+    top: 3px !important;
+  }
+  
+  [role=tabpanel] {
+    background: none;
+    border: 2px solid #000;
+    border-radius: 0px;
+        box-shadow: none !important;
+}
+
+menu[role=tablist] button {
+    background: none;
+    border-left: 2px solid #000;
+        border-top: 2px solid #000;
+            border-right: 2px solid #000;
+        box-shadow: none !important;
+}
+
+menu[role=tablist] button:first-of-type:before {
+display: none;
+}
+
+.menu {
+  box-shadow: none;
+      border: 1px solid #000;
+}

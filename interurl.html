@@ -1,0 +1,94 @@
+<html>
+<title>Inter a URL</title>
+<br>
+<style>
+.gsc-control-cse {
+ background: none !important; 
+ border: none !important; 
+}
+
+a {
+   text-decoration: none;
+}
+
+@keyframes moveIt {
+  from {background-position: right;}
+  to {background-position: left;}
+}
+
+* {
+  animation: moveIt 35s linear infinite;
+}
+
+
+body {
+  background: url('goodevilfaint.png');
+  background-size: cover;
+}
+
+p {
+  font-size: 12px;
+}
+
+* {
+  font-family: Arial !Important;
+}
+
+.gsc-search-button {
+   color: #FFF !important;
+}
+
+.urls {
+  border: 1px solid #dfe1e5;
+  padding: 5px;
+}
+
+table.gsc-search-box {
+    width: 420px;
+    margin: 2px;
+}
+
+.smalltext {
+ font-size: 10px; 
+}
+.gsc-search-button-v2 {
+    font-size: 12;
+    padding: 6px 27px;
+    width: auto;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 2px;
+    border-color: #3079ed;
+    background-color: #4d90fe;
+    background-image: linear-gradient(top, #4d90fe, #4787ed);
+}
+</style>
+<center><img src="inter-logo.png" width="30%"><br>
+<br><p>Input URL:<br></p>
+<center></center>
+<script type="text/javascript">// <![CDATA[
+    // enter full or relative URL to your search page
+    var search_htm_url = "//";
+    function searchPage() {
+    if ((document.searchpage.keyword.value.length == 0)
+    || (document.searchpage.keyword.value == "")) {
+    alert("First you must enter a keyword to search for.");
+    } else {
+    sel = document.searchpage.and_or.selectedIndex;
+    location.href = search_htm_url 
+    + escape(document.searchpage.keyword.value)
+    
+    }
+    return false;
+    }
+    document.write('<form name="searchpage" onSubmit="return searchPage()">'
+    +'<input type="text" class="urls" size="50%" name="keyword"> '
+    +'<input type="button" style="font-size: 9px !important;" class="gsc-search-button gsc-search-button-v2" value="GO" onClick="searchPage()" target="screen"><br>'
+    +'<select name="and_or" style="display:none !important;" size=1></select></form>');
+// ]]></script>
+<div class="smalltext">(only works with iframe-able URLs, so something like Google<br> won't work, also remove http from the url before pressing GO)</div>
+<div class="smalltext">Inter by Evelyn Caldart, Ethan Fasulo, 2021.</div><br>
+<a href="inter.html"><input type="button" class="gsc-search-button gsc-search-button-v2" value="BACK" style="font-size: 9px !important;"></a>
+</center>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* Superbar No Labels Large */
+
+#taskbar {
+    position: absolute;
+    height: 40px !important;
+}
+
+.taskbarPanel.activeTab, .button:hover {
+    font-weight: normal !important;
+}
+
+.taskbarPanel {
+    width: 48px !important;
+    height: 34px !important;
+    margin: 3.5px 0 0 2px;
+    font-size: 0px;
+    padding: 0px 0px;
+    
+     position: relative;
+    bottom: 1px;
+    left: 47px !important;
+}
+#txt {
+    height: 24px !important;
+}
+
+#minimPanel0, #minimPanel0 > .taskbarPanel.activeTab {
+    padding: 0px !important;
+}
+
+#minimPanel0, #minimPanel0 > .taskbarPanel.activeTab {
+    background-image: url(apple-touch-icon.png) !important;
+    background-size: 50% !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+
+#minimPanel6, #minimPanel6 > .taskbarPanel.activeTab, #minimPanel1, #minimPanel1 > .taskbarPanel.activeTab, #minimPanel3, #minimPanel3, #minimPanel2, #minimPanel2 > .taskbarPanel.activeTab > .taskbarPanel.activeTab, #minimPanel4, #minimPanel4 > .taskbarPanel.activeTab, #minimPanel5, #minimPanel5 > .taskbarPanel.activeTab, .taskbarPanel.activeTab, #minimPanel7, #minimPanel7 {
+    background-size: 50% !important;
+      background-position: 50% 50% !important;
+background-repeat: no-repeat !important;
+ padding-left: 0px; 
+}
+
+.dropbtn, .dropbtn > img {
+    width: 35px;
+    height: 34px;
+        bottom: 3px;
+    left: 1px;
+        background-size: 100% !important;
+}
+
+.contents {
+       bottom: 43px;
+}
+
+#rimetbtn2, #rimetbtn3 {
+    display: none !important;
+}
+
+/* 32x32 icons */
+#minimPanel2, #minimPanel2 > .taskbarPanel.activeTab {
+    background-image: url(icons/32WVPC.png);
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+
+#minimPanel6, #minimPanel6 > .taskbarPanel.activeTab {
+    background-image: url(icons/32Control.png);
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+#minimPanel1, #minimPanel1 > .taskbarPanel.activeTab {
+    background-image: url(icons/32Inter.png);
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+#minimPanel7, #minimPanel7 > .taskbarPanel.activeTab {
+    background-image: url(icons/32Rimetunes.png);
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}

@@ -1,0 +1,62 @@
+ @import url("winclassic.css");
+  
+  @font-face {
+	font-family:px_sans_nouveaux;
+	src:url(px_sans_nouveaux.ttf) format('truetype');
+}
+  
+  #comments {
+    display: none !important;
+  }
+  
+  desktop, .windowHeader {
+    background: linear-gradient(to left,#0ff 0,#f0f 100%) !important;
+  }
+  
+  
+  .windowHeader > strong, #txt, button, #themeButton, #colorsButton, .wplist, .wplist > strong, li > h1, .windowHeader, #window0 > .wincontent, .abtRimet, #okButton, #iconDesktop, .contents, .wplist > #list, h2, .audioplayer-time {
+    font-family: px_sans_nouveaux !important;
+    font-size: 8px !important;
+}
+  
+  .winclose {
+    background: url('http://geocities.ws/rimet/93close.png'), silver !important;
+    background-size: 12px !important;
+    background-repeat: no-repeat !important;
+    background-position: 2px 0.5px !important;
+  }
+  
+  #window0 .wincontent {
+    width: 335px !important;
+    height: 190px !important;
+}
+  
+  .dicon {
+    text-shadow: 0 1px #000;
+  }
+  
+  .iconText {
+    margin-top: 2px !important;
+  }
+  
+  #icon2 > .desktopIcon > .iconText {
+    margin-left: -5px !important;
+  }
+  
+  .dropbtn {
+    background-image: url(https://geocities.ws/rimet/win93/93start.png) !important;
+    width: 75px !important;
+height: 23px !important;
+    top: -4px !important;
+    left: 2.5px !important;
+}
+  
+  .taskbarPanel {
+    left: 80px !important;
+        font-family: px_sans_nouveaux !important;
+    font-size: 8px !important;
+  }
+  
+  #txt {
+    padding: 7px;
+  }

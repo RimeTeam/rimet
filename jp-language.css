@@ -1,0 +1,228 @@
+
+  .windowHeader > strong, .itemsOnly, #startUsername, .reInst, .reInst-text, .csTmz-text, .CtPl-text, .crdts-text, #themeButton, #langButton, .cpl-clink1, .cpl-clink2, .cpl-clink3 {
+    font-size: 0px !important;
+  }
+  
+  .taskbarPanel {
+    font-size: 0px !important;
+    height: 22px;
+    top: -1px !important;
+  }
+  
+  #openAbout, #openIntr, #openWvPC, #openNtpd, #openHtCb, #openChtn, #openCtPl {
+    font-size: 0px !important;
+  }
+  
+  .winName::after {
+    top: -1px;
+  }
+  
+  .windowHeader > strong {
+    top: -5px !important;
+  }
+  
+  .dicon, .iconText {
+    font-size: 0px !important;
+    background-color: none !important;
+  }
+  
+  
+  #window0 > .windowHeader > strong::after, #openAbout::after, #minimPanel0 > .winName::after { 
+  content: "Rimetについて";
+    font-size: 11px;
+    position: relative;
+    top: 1px;
+}
+  
+   #window1 > .windowHeader > strong::after, #openIntr::after, #minimPanel1 > .winName::after { 
+  content: "Interブラウザ";
+     position: relative;
+     top: 1px;
+    font-size: 11px;
+}
+  
+   #window2 > .windowHeader > strong::after, #openWvPC::after, #minimPanel2 > .winName::after  { 
+  content: "ウィンドウズ バーチャル PC";
+     position: relative;
+     top: 2px;
+     left: 3px;
+    font-size: 11px;
+}
+  
+  #window3 > .windowHeader > strong::after, #openNtpd::after, #minimPanel3 > .winName::after { 
+  content: "ノート";
+     position: relative;
+     top: 2px;
+     left: 3px;
+    font-size: 11px;
+}
+  
+   #window4 > .windowHeader > strong::after, #openHtCb::after, #minimPanel4 > .winName::after { 
+  content: "HTMLコメント";
+     position: relative;
+     top: 1px;
+     left: 3px;
+    font-size: 11px;
+}
+  
+     #window5 > .windowHeader > strong::after, #openChtn::after, #minimPanel5 > .winName::after { 
+  content: "Chatangoチャット";
+     position: relative;
+     top: 1px;
+     left: 3px;
+    font-size: 11px;
+}
+  
+    #window6 > .windowHeader > strong::after, #openCtPl::after, #minimPanel6 > .winName::after { 
+  content: "コントロールパネル";
+     position: relative;
+     top: 1px;
+     left: 3px;
+    font-size: 11px;
+}
+ 
+ 
+  .rimetOSName, .rimetOSVersion, .rimetCopyInfo, .rimetBasedOn, .rimetLicensedTo, .rimetPersonLT, .rimetOrganLT, .rimetRAMavail, .adc1, .adc2, .abttempSrc, .abtthemeSrc, .sysinfo-title, .rimetPossible, a.shutDown, .shutDown {
+    font-size: 0px;
+  }
+  
+  .rimetOSName::after { 
+  content: "Fasdus' Rimet";
+    font-size: 11px !important;
+  }
+  
+  .rimetOSVersion::after { 
+  content: "発売日:2021年11月";
+    font-size: 11px !important;
+  }
+  
+   .rimetCopyInfo::after { 
+  content: "© 2021 FasdusWisdom";
+    font-size: 11px !important;
+  }
+  
+  .rimetBasedOn::after { 
+  content: "'Windows'テンプレートに触発されたの";
+    font-size: 11px !important;
+  }
+  
+   .rimetLicensedTo::after { 
+  content: "製品ライセンス:";
+    font-size: 11px !important;
+  }
+  
+  .rimetPersonLT::after { 
+  content: "管理者";
+    font-size: 11px !important;
+  }
+  
+  .rimetOrganLT::after { 
+  content: "EthanF44's のウェブサイト";
+    font-size: 11px !important;
+  }
+  
+  #startUsername::after { 
+  content: "管理者";
+  font-size: 16px !important;
+  }
+  
+  .CtPl-text::after { 
+  content: "コントロールパネル:";
+  font-size: 20px !important;
+  }
+  
+  .reInst-text::after { 
+  content: "再インストール:";
+  font-size: 16px !important;
+  }
+  
+  .csTmz-text::after { 
+  content: "カスタマイズ:";
+  font-size: 16px !important;
+  }
+  
+  .crdts-text::after { 
+  content: "クレジット:";
+  font-size: 16px !important;
+  }
+  
+  .reInst::after { 
+  content: "Rimetの再インストール";
+  font-size: 11px !important;
+  }
+  
+  .rimetRAMavail::after { 
+  content: "Rimet が使用できる物理メモリ: 512,000 KB";
+  font-size: 11px !important;
+  }
+  
+   .adc1::after { 
+  content: "と";
+  font-size: 11px !important;
+  }
+  
+  .adc2::after {
+  content: "はRimetのテーマの作成者およびユーザー";
+  font-size: 11px !important;
+  }
+  
+  .rimetPossible::after { 
+  content: "Rimetは実現に関わったすべての方に感謝いたします";
+  font-size: 11px !important;
+  }
+  
+  .abttempSrc::after {
+  content: "はRimetのテーマの作成者およびユーザー";
+  font-size: 11px !important;
+  }
+  
+  .abtthemeSrc::after {
+  content: "テーマコードのソース - The Site Wizard";
+  font-size: 11px !important;
+  }
+  
+  .sysinfo-title::after {
+  content: "システム情報:";
+  font-size: 11px !important;
+  }
+  
+  
+  
+  /* Control Panel */
+  
+  #themeButton::after { 
+  content: "テーマを選択";
+  font-size: 11px !important;
+  }
+  
+  #langButton::after { 
+  content: "言語を選択して";
+  text-orientation: upright;
+  font-size: 11px !important;
+  }
+  
+  .cpl-clink1::after { 
+  content: "テーマ変更スクリプトThe Site Wizardからきました";
+  font-size: 16px !important;
+  }
+  
+  .cpl-clink2::after { 
+  content: "Windows 10はMicrosoftが製造し、";
+  font-size: 16px !important;
+  }
+  
+   .cpl-clink3::after { 
+  content: "所有しています日本語の翻訳サポート：Mamoru Subs";
+  font-size: 16px !important;
+  }
+  
+  .itemsOnly::before { 
+  content: "アプリケーション" !important;
+  }
+  
+  /* Shut Down */
+  .shutDown::after { 
+  content: "Rimetを終了";
+    font-size: 11px !important;
+  }
+  

@@ -1,0 +1,108 @@
+<title>Rimet</title>
+<head>
+<meta http-equiv="pragma" content="no-cache" />
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Rimet Desktop</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="redirection-mobile.js"></script>
+		<script type="text/javascript">// <![CDATA[
+ SA.redirection_mobile ({
+ mobile_url : "mobile.html",
+ });
+ 
+// ]]></script>
+<style>
+
+body {
+  overflow: hidden;
+}
+
+#bar {
+margin: 0 auto;
+width: 250px;height: 10px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;height: 100%;
+background: url('ad40-pdb.png');
+} 
+
+* { font-family: Trebuchet MS, "Arial", sans-serif; }
+
+#wrap { text-align: center; }
+
+#bar {
+margin: 0 auto;
+width: 250px;
+text-align: left;
+border: 1px solid white;
+}
+
+span { 
+    display: inline-block; 
+    position: absolute;
+}
+
+body {
+  background: #000;
+}
+* {
+  font-family: "MS Sans Serif", Microsoft Sans Serif, Segoe UI, Roboto, Fazu Sans, Helvetica, Arial, sans serif;
+}
+* {
+  color: white;
+}
+
+#skip {
+position: absolute !important;
+bottom: 10px !important;
+left: 10px !important;
+}
+
+
+</style>
+
+<script>
+
+
+         setTimeout(function(){
+            window.location.href = 'rimet.html';
+         }, 15000);
+
+function moveDiv() {
+    var $span = $("#random");
+    
+    $span.fadeOut(0, function() {
+        var maxLeft = $(window).width() - $span.width();
+        var maxTop = $(window).height() - $span.height();
+        var leftPos = Math.floor(Math.random() * (maxLeft + 1))
+        var topPos = Math.floor(Math.random() * (maxTop + 1))
+     
+        $span.css({ left: leftPos, top: topPos }).fadeIn(0);
+    });
+};
+
+
+moveDiv();
+setInterval(moveDiv, 500);
+</script>
+<body>
+<div id="wrap" onLoad="progress();">
+<p>&nbsp;</p><br>
+<img src="rimet-startup.png" style="width:70%;">
+<br>
+<div id="container">
+    <span id="random"><img src="flyingrimet.gif"></span>
+</div>
+</div>

@@ -1,0 +1,101 @@
+<title>Rimet Setup</title>
+<style>
+
+body {
+ background: transparent !important;
+}
+
+h1, p {
+ color: #FFF !important; 
+}
+
+#bar {
+margin: 0 auto;
+width: 250px;height: 10px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;height: 100%;
+background: lightblue;
+} 
+
+#wrap { text-align: center; }
+
+#bar {
+margin: 0 auto;
+width: 250px;
+text-align: left;
+border: 1px solid black;
+}
+
+#progress {
+width: 0;
+background: lightblue;
+}
+
+body {
+  background-image: url('https://static.yooco.de/templates/core/images/tiles2/always_grey.png');
+}
+body {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+a {
+  color: white;
+}
+
+body {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+.tnr {
+  font-family: Times;
+  font-size: 4vw;
+  padding: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  color: white;
+}
+body {
+ background: #FFF; 
+color: #000;
+}
+html {
+  height: 100%;
+}
+</style>
+
+<script>
+
+var time = 10000; // 10 secs
+var steps = 50; // Five per second
+var step = 1;
+
+function progress() {
+var bar = document.getElementById( "bar");
+var aStep = (bar.offsetWidth -2) /steps;// 2px border removed from width
+var x = Math.round( aStep *step);
+var progress = document.getElementById( "progress");
+
+progress.style.width = x +"px";
+step++;
+
+if( step > steps) redir();
+else setTimeout( "progress();", time /steps);
+}
+
+function redir() {
+location.replace( 'installed.html', '_blank');
+}
+
+</script>
+<body onLoad='progress();'>
+<div id='wrap'>
+<p>&nbsp;</p>
+<h1> Installing Rimet... </h1>
+<div id='bar'><div id='progress'></div></div>
+<p>Do not close this tab or turn off your<br> computer during installation.</p>
+<br>
+
+</div>
